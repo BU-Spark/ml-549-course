@@ -2,6 +2,10 @@
 
 The purpose of this document is to provide data science project groups with some guidelines on how to best structure their projects in a way that encourages consistent workflows across projects and promotes collaboration. This document is based off of Red Hat's ET team's [data science workflows](https://github.com/aicoe-aiops/data-science-workflows) documentation.
 
+Following is a timeline that can be followed for the projects.
+
+![project timeline](./project-timeline.png "project timeline")
+
 # How do I manage my project?
 
 Organizational overhead can be an easily overlooked, and a potentially crippling oversight for a new data science project. To make things worse, data science is still a relatively new discipline and the right tools and methodologies for project management are still being figured out.
@@ -24,7 +28,7 @@ The approach to overcoming this issue can simply be to focus on the fewest numbe
 
 # What are the phases of a data science project?
 
-### 1. Project Definition and Use Case Understanding:
+## Phase 1: Project Definition and Use Case Understanding:
 
 In this phase of the project, project groups will meet with Stakeholders to discuss the projects, available data and desired outcomes, use cases and end-users. 
 
@@ -44,8 +48,13 @@ The project outline can include:
  
 Once this is done, you can move on to step 2, OR share your new project proposal with your stakeholders, instructors, to get some feedback.
 
+**Deliverables from Phase 1**:
 
-### 2. Research and Problem Understanding:
+- [ ] Project Github Repository following a standard template with updated Readme.
+- [ ] Project Outline markdown added to repository using the project outline template.
+- [ ] Midterm Presentation Slides on plan to execute project
+
+## Phase 2: Research and Problem Understanding:
 
 Now that you have a problem you'd like to solve, its time to do some research! This phase of a project is quite flexible and is bound to be traversed differently by every individual. However, before jumping into any hard-core development its is generally good to make sure to do the following at the bare minimum:
 
@@ -62,7 +71,12 @@ At this phase in the project, teams can present a modified plan for achieving pr
 * ML approach and reasoning
 * Deliverable Artifacts
 
-### 3. Data Preparation and EDA: 
+**Deliverables from Phase 2**:
+
+- [ ] Research document markdown added to the project repository outlining possible approaches.
+- [ ] Update [checklist for project completion section](https://github.com/oindrillac/ml-549-course/blob/main/project-structure/project-document-template.md#b-checklist-for-project-completion) with any new discoveries.
+
+## Phase 3: Data Preparation and EDA: 
 
 Time to dig into the data. Before getting right into the Machine Learning development, we think it's best practice to take some focused time to familiarize yourself with the data and to write all the data preparation, processing and management functions you'll need to make life easier in the future. 
 
@@ -82,8 +96,11 @@ Time to dig into the data. Before getting right into the Machine Learning develo
 
 7. Make any required updates to the project Readme/plan if needed due to discoveries in the data set.  
 
+**Deliverables from Phase 3**:
 
-### 4. Implement proof of concept AI/ML model:
+- [ ] Exploratory Data Analysis (EDA) Notebook added to Project Repository.
+
+## Phase 4: Implement proof of concept AI/ML model:
 
 Here is were we start to do some ML exploration and put together our bare-bones MVP (minimum viabl) application. 
 
@@ -98,7 +115,11 @@ Here is were we start to do some ML exploration and put together our bare-bones 
 Note: Focus on completing an end to end process of deploying an initial version of the model which meets the required criteria rather than focusing on achieving the best possible model for the first deployment. Greater focus should be on creating reproducible code and  models and services that are set up in a way that they be improved in future iterations with more feedback.
 Often deploying a working proof of concept model and sharing that with the stakeholders early on in a project, will help create dialogue, fine tune requirements, and can generate good feedback early in the process of a building a machine learning project. By adopting a software engineering mindset and [engineering best practices](https://se-ml.github.io/practices/) for machine learning projects, we can create more reproducible code, faster delivery cycles and better machine learning applications.
 
-### 5. Deployed PoC as a service:
+**Deliverables from Phase 4**:
+
+- [ ] Proof of Concept (PoC) Notebook added to Project Repository.
+
+## Phase 5: Deployed PoC as a service:
 
 Your work is ready to leave the safety of a jupyter notebook and become a deployed service that will become the center of a new intelligent application. Get Excited! 
 
@@ -107,7 +128,12 @@ Your work is ready to leave the safety of a jupyter notebook and become a deploy
 2. Write a short notebook that can send and receive inference requests from your model services endpoint to make it easy for others to test and try out. This will serve as an enpoint for stakeholders to try out the model. So focus on making their interaction with the model easy.
 
 
-### 6. Evaluation:
+**Deliverables from Phase 5**:
+
+- [ ] Deployed model available as a service.
+- [ ] Instructions to interact with model or example code to run model.
+
+## Phase 6. Evaluation:
 
 Now that your model is out in the wild, its a good idea to see if it's actually useful to anyone and evaluate its real world performance. 
 
@@ -116,4 +142,9 @@ Now that your model is out in the wild, its a good idea to see if it's actually 
 2. If there are any issues or areas to improve (which there will be) loop back to previous steps in this workflow and repeat until your project meets your desired outcome. 
 
 3. Monitor your model deployed in production for its performance on actual data, data drift and consider approaches to re-train and continuously improve the model.
+
+**Deliverables from Phase 6**:
+
+- [ ] Presentation Slides on deployed application.
+- [ ] Monitoring plan for the application.
 
