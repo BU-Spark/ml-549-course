@@ -32,6 +32,8 @@ The approach to overcoming this issue can simply be to focus on the fewest numbe
 
 In this phase of the project, project groups will meet with Stakeholders to discuss the projects, available data and desired outcomes, use cases and end-users. 
 
+Groups will also come up with a team agreement which documents how the team will function. Establishing ethical, equitable, and supportive processes enables teams to achieve and maintain high performance.
+
 * To start, project groups should create a repository and include a README with an initial outline of the project.
 
 * With the help of the information provided by the stakeholders, project groups come up with a "project outline" consisting of the description of any available data or similar projects and the desired outcomes and end-users of this intelligent application. Please feel free to start with [this template](./project-document-template.md) for inspiration. 
@@ -50,8 +52,9 @@ Once this is done, you can move on to step 2, OR share your new project proposal
 
 **Deliverables from Phase 1**:
 
-- [ ] Project Github Repository following a standard template with updated Readme.
-- [ ] Project Outline markdown added to repository using the project outline template.
+- [ ] Project Github Repository following a standard template with updated Readme
+- [ ] Project Outline markdown added to repository using the project outline template
+- [ ] Team Agreement Document Completed
 - [ ] Midterm Presentation Slides on plan to execute project
 
 ## Phase 2: Research and Problem Understanding:
@@ -73,8 +76,8 @@ At this phase in the project, teams can present a modified plan for achieving pr
 
 **Deliverables from Phase 2**:
 
-- [ ] Research document markdown added to the project repository outlining possible approaches.
-- [ ] Update [checklist for project completion section](https://github.com/oindrillac/ml-549-course/blob/main/project-structure/project-document-template.md#b-checklist-for-project-completion) with any new discoveries.
+- [ ] Research document markdown added to the project repository outlining possible approaches
+- [ ] Update [checklist for project completion section](https://github.com/oindrillac/ml-549-course/blob/main/project-structure/project-document-template.md#b-checklist-for-project-completion) with any new discoveries
 
 ## Phase 3: Data Preparation and EDA: 
 
@@ -98,7 +101,7 @@ Time to dig into the data. Before getting right into the Machine Learning develo
 
 **Deliverables from Phase 3**:
 
-- [ ] Exploratory Data Analysis (EDA) Notebook added to Project Repository.
+- [ ] Exploratory Data Analysis (EDA) Notebook added to Project Repository
 
 ## Phase 4: Implement proof of concept AI/ML model:
 
@@ -130,8 +133,8 @@ Your work is ready to leave the safety of a jupyter notebook and become a deploy
 
 **Deliverables from Phase 5**:
 
-- [ ] Deployed model available as a service.
-- [ ] Instructions to interact with model or example code to run model.
+- [ ] Deployed model available as a service
+- [ ] Instructions to interact with model or example code to run model
 
 ## Phase 6. Evaluation:
 
@@ -145,6 +148,6 @@ Now that your model is out in the wild, its a good idea to see if it's actually 
 
 **Deliverables from Phase 6**:
 
-- [ ] Presentation Slides on deployed application.
-- [ ] Monitoring plan for the application.
+- [ ] Presentation Slides on deployed application
+- [ ] Monitoring plan for the application
 
