@@ -1,0 +1,64 @@
+apiVersion: machinelearning.seldon.io/v1
+kind: SeldonDeployment
+metadata:
+  name: YOUR_USERNAME
+spec:
+  name: YOUR_USERNAME
+  predictors:
+  - componentSpecs:
+    - spec:
+        containers:
+        - image: quay.io/supathak/github-ttm-test:v3
+          name: ttm-model-clf
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: 100m
+              memory: 1Gi
+            limits:
+              cpu: 500m
+              memory: 2Gi
+          env:
+          - name: GUNICORN_WORKERS
+            value: '1'
+          - name: GUNICORN_THREADS
+            value: '2'
+          - name: S3_ENDPOINT
+            valueFrom:
+              secretKeyRef:
+                key: AIOPS_TOOLS_WORKSHOP_S3_ENDPOINT_FULL
+                name: ds-day
+          - name: S3_ACCESS_KEY
+            valueFrom:
+              secretKeyRef:
+                key: AIOPS_TOOLS_WORKSHOP_AWS_ACCESS_KEY_ID
+                name: ds-day
+          - name: S3_SECRET_KEY
+            valueFrom:
+              secretKeyRef:
+                key: AIOPS_TOOLS_WORKSHOP_AWS_SECRET_ACCESS_KEY
+                name: ds-day
+          - name: S3_BUCKET
+            valueFrom:
+              secretKeyRef:
+                key: AIOPS_TOOLS_WORKSHOP_BUCKET
+                name: ds-day
+          - name: S3_MODEL_KEY
+            value: 'november/operate-first/community/ttm-model'
+
+    svcOrchSpec:
+      resources:
+        requests:
+          cpu: 100m
+          memory: 1Gi
+        limits:
+          cpu: 500m
+          memory: 2Gi
+    graph:
+      children: []
+      endpoint:
+        type: REST
+      name: ttm-model-clf
+      type: MODEL
+    name: ttm-model-predictor
+    replicas: 1
