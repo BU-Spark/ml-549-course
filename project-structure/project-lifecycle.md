@@ -124,16 +124,16 @@ Often deploying a working proof of concept model and sharing that with the stake
 
 ## Phase 5: Deployed PoC as a service:
 
-Your work is ready to leave the safety of a jupyter notebook and become a deployed service that will become the center of a new intelligent application. Get Excited! 
+Your work is ready to leave the safety of a jupyter notebook and become a tool, application or service that will become the center of a new intelligent application. Get Excited! 
 
-1. Deploy your model. There are a number of tools out there to make this easy. You can choose to deploy your model as a web service, as a containerized application. (example: [Seldon serving on Openshift for model deployment](https://github.com/aicoe-aiops/ocp-ci-analysis/blob/master/docs/workshop/model_deployment.md))
+1. Deploy your model: There are a number of tools out there to make this easy. You can choose to deploy your model as a web service, a dashboard, a github action, as a containerized application. (example: [Seldon serving on Openshift for model deployment](https://github.com/aicoe-aiops/ocp-ci-analysis/blob/master/docs/workshop/model_deployment.md))
 
-2. Write a short notebook that can send and receive inference requests from your model services endpoint to make it easy for others to test and try out. This will serve as an enpoint for stakeholders to try out the model. So focus on making their interaction with the model easy.
+2. Document the usage: Write documentation on the usage of your model which highlights how stakeholders can interact with your model. You could write a short notebook that can send and receive inference requests from your model services endpoint to make it easy for stakeholders to test and try out your model. So focus on making their interaction with the model easy.
 
 
 **Deliverables from Phase 5**:
 
-- [ ] Deployed model available as a service
+- [ ] Deployed model as an application or service
 - [ ] Instructions to interact with model or example code to run model
 
 ## Phase 6. Evaluation:
@@ -144,10 +144,6 @@ Now that your model is out in the wild, its a good idea to see if it's actually 
 
 2. If there are any issues or areas to improve (which there will be) loop back to previous steps in this workflow and repeat until your project meets your desired outcome. 
 
-3. Monitor your model deployed in production for its performance on actual data, data drift and consider approaches to re-train and continuously improve the model.
-
 **Deliverables from Phase 6**:
 
 - [ ] Presentation Slides on deployed application
-- [ ] Monitoring plan for the application
-
