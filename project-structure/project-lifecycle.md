@@ -1,6 +1,6 @@
-# How to Structure a Data Science Project
+# How to Structure a Machine Learning or Data Science Project
 
-The purpose of this document is to provide data science project groups with some guidelines on how to best structure their projects in a way that encourages consistent workflows across projects and promotes collaboration. This document is based off of Red Hat's ET team's [data science workflows](https://github.com/aicoe-aiops/data-science-workflows) documentation.
+The purpose of this document is to provide machine learning and data science project groups with some guidelines on how to best structure their projects in a way that encourages consistent workflows across projects and promotes collaboration. This document is based off of Red Hat's ET team's [data science workflows](https://github.com/aicoe-aiops/data-science-workflows) documentation.
 
 Following is a timeline that can be followed for the projects.
 
@@ -36,7 +36,7 @@ Groups will also come up with a team agreement which documents how the team will
 
 * To start, project groups should create a repository and include a README with an initial outline of the project.
 
-* With the help of the information provided by the stakeholders, project groups come up with a "project outline" consisting of the description of any available data or similar projects and the desired outcomes and end-users of this intelligent application. Please feel free to start with [this template](./project-document-template.md) for inspiration. 
+* With the help of the information provided by the stakeholders, project groups come up with a "project outline" consisting of the description of any available data or similar projects and the desired outcomes and end-users of this intelligent application. Please feel free to start with [this template](./project-outline-template.md) for inspiration.
 
 The project outline can include: 
 
@@ -77,7 +77,7 @@ At this phase in the project, teams can present a modified plan for achieving pr
 **Deliverables from Phase 2**:
 
 - [ ] Research document markdown added to the project repository outlining possible approaches
-- [ ] Update [checklist for project completion section](https://github.com/oindrillac/ml-549-course/blob/main/project-structure/project-document-template.md#b-checklist-for-project-completion) with any new discoveries
+- [ ] Update [checklist for project completion section](project-outline-template.md#b-checklist-for-project-completion) with any new discoveries
 
 ## Phase 3: Data Preparation and EDA: 
 
