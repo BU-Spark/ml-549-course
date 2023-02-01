@@ -30,7 +30,7 @@ if __name__ == '__main__':
     wandb.init(
         project="hw1_spring2023",  # Leave this as 'hw1_spring2023'
         entity="bu-spark-ml",  # Leave this
-        group="<your_BU_username>",  # <<<<<<< Put your BU username here
+        group="sijieye",  # <<<<<<< Put your BU username here
         notes="Minimal model"  # <<<<<<< You can put a short note here
     )
 
@@ -84,8 +84,28 @@ if __name__ == '__main__':
         # Edit code here -- Update the model definition
         # You will need a dense last layer with 10 output channels to classify the 10 classes
         # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+        layers.BatchNormalization(),
+        layers.Conv2D(32, (3,3), activation='relu', padding = "same", input_shape= (32,32,3)),
+        layers.BatchNormalization(),
+        layers.MaxPooling2D((2, 2)),
+        layers.Dropout(0.2),
+        
+        layers.BatchNormalization(),
+        layers.Conv2D(64, (3,3), activation='relu', padding = "same"),
+        layers.BatchNormalization(),
+        layers.MaxPooling2D((2, 2)),
+        layers.Dropout(0.2),
+        
+        layers.BatchNormalization(),
+        layers.Conv2D(128, (3,3), activation='relu', padding = "same"),
+        layers.BatchNormalization(),
+        layers.MaxPooling2D((2, 2)),
+        layers.Dropout(0.5),
+        
+        
         layers.Flatten(),
         layers.Dense(128, activation='relu'),
+        layers.BatchNormalization(),
         # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         tf.keras.layers.Dense(10)
     ])
@@ -96,9 +116,9 @@ if __name__ == '__main__':
         #####################################
         # Edit these as desired
         # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-        "learning_rate": 0.001,
+        "learning_rate": 0.0005,
         "optimizer": "adam",
-        "epochs": 5,
+        "epochs": 18,
         "batch_size": 32
         # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     }
@@ -111,7 +131,7 @@ if __name__ == '__main__':
 
     history = model.fit(
         ds_cifar10_train,
-        epochs=5,
+        epochs=18,
         validation_data=ds_cifar10_test,
         callbacks=[WandbMetricsLogger()]
     )

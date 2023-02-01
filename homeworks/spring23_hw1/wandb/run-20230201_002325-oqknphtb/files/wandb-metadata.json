@@ -1,0 +1,217 @@
+{
+    "os": "Linux-3.10.0-1160.81.1.el7.x86_64-x86_64-with-glibc2.2.5",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-02-01T05:23:25.734308",
+    "startedAt": "2023-02-01T05:23:25.357296",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "hw1_cifar10_tf.py",
+    "codePath": "homeworks/spring23_hw1/hw1_cifar10_tf.py",
+    "git": {
+        "remote": "https://github.com/sijieye/ml-549-course.git",
+        "commit": "3da699b1348280f8ef32763d7b8d6c3a8cb665f8"
+    },
+    "email": null,
+    "root": "/projectnb/ds549/students/sijieye/ml-549-course",
+    "host": "scc-q32",
+    "username": "sijieye",
+    "executable": "/projectnb/ds549/students/sijieye/ds549_venv/bin/python3",
+    "cpu_count": 32,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2512.836562499999,
+        "min": 1200.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2221.85,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3899.218,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2559.545,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3673.632,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3623.217,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3843.505,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3423.779,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3566.308,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1200.048,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3424.633,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1707.958,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1199.877,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2383.178,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2130.761,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1506.469,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2062.402,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1539.794,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1398.803,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3602.88,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2337.207,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2603.979,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2629.614,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3029.003,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1408.203,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2728.564,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1199.877,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3587.158,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1870.996,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2954.833,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1200.048,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2408.813,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1724.194,
+            "min": 1200.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "total": 15.623897552490234,
+        "used": 12.53036117553711
+    },
+    "gpu": "Tesla V100-SXM2-16GB",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100-SXM2-16GB",
+            "memory_total": 17179869184
+        },
+        {
+            "name": "Tesla V100-SXM2-16GB",
+            "memory_total": 17179869184
+        },
+        {
+            "name": "Tesla V100-SXM2-16GB",
+            "memory_total": 17179869184
+        },
+        {
+            "name": "Tesla V100-SXM2-16GB",
+            "memory_total": 17179869184
+        }
+    ],
+    "memory": {
+        "total": 187.36885452270508
+    }
+}

@@ -1,0 +1,1 @@
+{"epoch/loss": 0.8532654643058777, "epoch/sparse_categorical_accuracy": 0.6962400078773499, "epoch/val_loss": 0.9101226329803467, "epoch/val_sparse_categorical_accuracy": 0.6851999759674072, "epoch/epoch": 4, "epoch/learning_rate": 0.0010000000474974513, "_timestamp": 1675232520.6069221, "_runtime": 31.181458234786987, "_step": 4, "_wandb": {"runtime": 30}}

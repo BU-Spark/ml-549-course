@@ -1,0 +1,53 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.9
+    framework: keras
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    m:
+    - 1: epoch/epoch
+      6:
+      - 3
+    - 1: epoch/loss
+      5: 1
+      6:
+      - 1
+    - 1: epoch/sparse_categorical_accuracy
+      5: 1
+      6:
+      - 1
+    - 1: epoch/val_loss
+      5: 1
+      6:
+      - 1
+    - 1: epoch/val_sparse_categorical_accuracy
+      5: 1
+      6:
+      - 1
+    - 1: epoch/learning_rate
+      5: 1
+      6:
+      - 1
+    python_version: 3.8.10
+    start_time: 1675231081.821457
+    t:
+      1:
+      - 2
+      - 3
+      - 55
+      2:
+      - 2
+      - 3
+      - 55
+      3:
+      - 2
+      - 7
+      - 23
+      - 38
+      4: 3.8.10
+      5: 0.13.9
+      8:
+      - 5
