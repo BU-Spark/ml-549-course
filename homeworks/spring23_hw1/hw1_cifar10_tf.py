@@ -18,6 +18,8 @@ from wandb.keras import WandbMetricsLogger
 import tensorflow as tf
 from tensorflow import keras
 from keras import layers
+# from tensorflow.keras.layers 
+import pickle 
 import tensorflow_datasets as tfds
 from matplotlib import pyplot as plt
 
@@ -30,7 +32,7 @@ if __name__ == '__main__':
     wandb.init(
         project="hw1_spring2023",  # Leave this as 'hw1_spring2023'
         entity="bu-spark-ml",  # Leave this
-        group="<your_BU_username>",  # <<<<<<< Put your BU username here
+        group="hzjh",  # <<<<<<< Put your BU username here
         notes="Minimal model"  # <<<<<<< You can put a short note here
     )
 
@@ -49,7 +51,7 @@ if __name__ == '__main__':
     (ds_cifar10_train, ds_cifar10_test), ds_cifar10_info = tfds.load(
         'cifar10',
         split=['train', 'test'],
-        data_dir='/projectnb/ds549/datasets/tensorflow_datasets',
+        data_dir='/Users/herbertzhang/Desktop/BU/CS549/ml-549-course/homeworks/hw1datasets',
         shuffle_files=True, # load in random order
         as_supervised=True, # Include labels
         with_info=True, # Include info
@@ -81,8 +83,16 @@ if __name__ == '__main__':
     model = tf.keras.models.Sequential([
         keras.Input(shape=(32, 32, 3)),
         #####################################
-        # Edit code here -- Update the model definition
-        # You will need a dense last layer with 10 output channels to classify the 10 classes
+        layers.Conv2D(64, (3,3), input_shape = ds_cifar10_train[1:] ),
+        layers.Activation("relu"), 
+        layers.MaxPooling2D(pool_size=(2,2)),
+        
+        layers.Conv2D(64, (3,3)),
+        layers.Activation("relu"), 
+        layers.MaxPooling2D(pool_size=(2,2)),
+        
+        
+        
         # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
         layers.Flatten(),
         layers.Dense(128, activation='relu'),
@@ -111,7 +121,7 @@ if __name__ == '__main__':
 
     history = model.fit(
         ds_cifar10_train,
-        epochs=5,
+        epochs=10,
         validation_data=ds_cifar10_test,
         callbacks=[WandbMetricsLogger()]
     )
