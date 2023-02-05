@@ -18,8 +18,7 @@ from wandb.keras import WandbMetricsLogger
 import tensorflow as tf
 from tensorflow import keras
 from keras import layers
-# from tensorflow.keras.layers 
-import pickle 
+# from tensorflow.keras.layers  
 import tensorflow_datasets as tfds
 from matplotlib import pyplot as plt
 
@@ -33,7 +32,7 @@ if __name__ == '__main__':
         project="hw1_spring2023",  # Leave this as 'hw1_spring2023'
         entity="bu-spark-ml",  # Leave this
         group="hzjh",  # <<<<<<< Put your BU username here
-        notes="Minimal model"  # <<<<<<< You can put a short note here
+        notes="modo modo"  # <<<<<<< You can put a short note here
     )
 
     """
@@ -51,7 +50,7 @@ if __name__ == '__main__':
     (ds_cifar10_train, ds_cifar10_test), ds_cifar10_info = tfds.load(
         'cifar10',
         split=['train', 'test'],
-        data_dir='/Users/herbertzhang/Desktop/BU/CS549/ml-549-course/homeworks/hw1datasets',
+        data_dir='/projectnb/ds549/datasets/tensorflow_datasets',
         shuffle_files=True, # load in random order
         as_supervised=True, # Include labels
         with_info=True, # Include info
@@ -70,12 +69,12 @@ if __name__ == '__main__':
     ds_cifar10_train = ds_cifar10_train.map(normalize_img, num_parallel_calls=tf.data.AUTOTUNE)
     ds_cifar10_train = ds_cifar10_train.cache()     # Cache data
     ds_cifar10_train = ds_cifar10_train.shuffle(ds_cifar10_info.splits['train'].num_examples)
-    ds_cifar10_train = ds_cifar10_train.batch(32)  # <<<<< To change batch size, you have to change it here
+    ds_cifar10_train = ds_cifar10_train.batch(64)  # <<<<< To change batch size, you have to change it here
     ds_cifar10_train = ds_cifar10_train.prefetch(tf.data.AUTOTUNE)
 
     # Prepare cifar10 test dataset
     ds_cifar10_test = ds_cifar10_test.map(normalize_img, num_parallel_calls=tf.data.AUTOTUNE)
-    ds_cifar10_test = ds_cifar10_test.batch(32)    # <<<<< To change batch size, you have to change it here
+    ds_cifar10_test = ds_cifar10_test.batch(64)    # <<<<< To change batch size, you have to change it here
     ds_cifar10_test = ds_cifar10_test.cache()
     ds_cifar10_test = ds_cifar10_test.prefetch(tf.data.AUTOTUNE)
 
@@ -83,19 +82,30 @@ if __name__ == '__main__':
     model = tf.keras.models.Sequential([
         keras.Input(shape=(32, 32, 3)),
         #####################################
-        layers.Conv2D(64, (3,3), input_shape = ds_cifar10_train[1:] ),
-        layers.Activation("relu"), 
+ 	#layers.Conv2D(64, (3,3), activation = "relu"),
+        #layers.Conv2D(64, (3,3), activation = "relu"),
+        #layers.MaxPooling2D(pool_size=(2,2)),
+ 	#layers.Dropout(rate = 0.1),
+	
+	
+	layers.Conv2D(64, (3,3), activation = "relu"),
+        layers.BatchNormalization(),
+	layers.Conv2D(64, (3,3), activation = "relu"),
+	layers.BatchNormalization(),
         layers.MaxPooling2D(pool_size=(2,2)),
-        
-        layers.Conv2D(64, (3,3)),
-        layers.Activation("relu"), 
+	layers.Dropout(rate = 0.2),
+
+	layers.Conv2D(128, (3,3), activation = "relu"),
+	layers.BatchNormalization(),
+	layers.Conv2D(128, (3,3), activation = "relu"),
+	layers.BatchNormalization(),
         layers.MaxPooling2D(pool_size=(2,2)),
+	layers.Dropout(rate = 0.3),
         
-        
-        
-        # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+        #vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
         layers.Flatten(),
-        layers.Dense(128, activation='relu'),
+	layers.Dense(256, activation='relu'),
+	layers.Dropout(rate = 0.4),
         # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         tf.keras.layers.Dense(10)
     ])
@@ -108,8 +118,8 @@ if __name__ == '__main__':
         # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
         "learning_rate": 0.001,
         "optimizer": "adam",
-        "epochs": 5,
-        "batch_size": 32
+        "epochs": 20,
+        "batch_size": 64
         # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     }
 
@@ -121,7 +131,7 @@ if __name__ == '__main__':
 
     history = model.fit(
         ds_cifar10_train,
-        epochs=10,
+        epochs=20,
         validation_data=ds_cifar10_test,
         callbacks=[WandbMetricsLogger()]
     )
