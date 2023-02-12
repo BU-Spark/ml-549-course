@@ -1,6 +1,6 @@
 # Project Document Template
 
-## _Authors,  20xx-Month-Day vx.x.x-dev_
+## Person2,  20xx-Month-Day vx.x.x-dev_
 
 
 ## Overview
