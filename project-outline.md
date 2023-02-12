@@ -1,6 +1,6 @@
-# Project Document Template
+# Our Project Template
 
-## _Authors,  20xx-Month-Day vx.x.x-dev_
+## Person1,  2023-Feb-12 v0.0.1
 
 
 ## Overview
