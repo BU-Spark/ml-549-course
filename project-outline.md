@@ -1,7 +1,6 @@
-# Project Document Template
+# Our Team Project Outlinee
 
-## Person2,  20xx-Month-Day vx.x.x-dev_
-
+## Person1, Person2  2023-Feb-12 v0.0.1
 
 ## Overview
 
