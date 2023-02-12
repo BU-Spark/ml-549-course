@@ -1,9 +1,10 @@
 # Our Team Project Outlinee
 
-## Person1,  2023-Feb-12 v0.0.1
-
+## Person1, Person2  2023-Feb-12 v0.0.1
 
 ## Overview
+
+Hey. I made some updates to the overview here!
 
 _A brief summary of the project based on initial research and stakeholder meetings. To the best of your abilities, 
 explain at a high level the stakeholders’ desired outcome for the project as well as the potential business value or 
