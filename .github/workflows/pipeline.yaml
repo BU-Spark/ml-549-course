@@ -1,0 +1,85 @@
+# In this workflow, we install dependencies from a requirements.txt within an ubuntu based OS
+name: sample-pipeline
+
+# Controls when the workflow will run
+on:
+
+  workflow_dispatch:
+  # Allows you to run this workflow manually from the Actions tab
+  # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+
+jobs:
+  step-1:
+    # The type of runner that the job will run on
+    
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip -r requirements.txt
+
+      - name: EDA notebook
+        run: |
+          python -m pip install jupyter nbconvert nbformat
+          jupyter nbconvert --to notebook --execute phase3_EDA/eda.ipynb --TemplateExporter.exclude_input=True --ExecutePreprocessor.kernel_name='python3' --output eda_executed
+      
+      - name: commit updated notebook 0
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: update notebook with pipeline
+          message: "Update Notebook"
+          add: "phase3_EDA/eda.ipynb"
+
+  step-2:
+    # The type of runner that the job will run on
+    
+    runs-on: ubuntu-latest
+    
+    env:
+      GITHUB_REPO: ${{ secrets.REPO }}
+      GITHUB_ORG: ${{ secrets.ORG }}
+      GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN || secrets.GITHUB_TOKEN }}
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip -r requirements.txt
+
+      - name: Data Collection notebook
+        run: python phase4_PoC/01_data_collection.py
+      
+      - name: commit updated script 1
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: update script with pipeline
+          message: "Updated data collection"
+          add: '["phase4_PoC/01_data_collection.py", "phase4_PoC/PRs/", "phase4_PoC/CLOSED_PR_IDS.parquet"]'
+          
+      - name: Feature Engineering notebook
+        run: |
+          python -m pip install jupyter nbconvert nbformat
+          jupyter nbconvert --to notebook --execute phase4_PoC/02_feature_engineering.ipynb --TemplateExporter.exclude_input=True --ExecutePreprocessor.kernel_name='python3' --output feature_engineering_executed
+      
+      - name: commit updated notebook 2
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: update notebook with pipeline
+          message: "Updated feature engineering"
+          add: "phase4_PoC/02_feature_engineering.ipynb"
