@@ -8,13 +8,14 @@ _(Adapted from an exerice from Yan LeCun's Deep Learning Course)_
 
 We have the following two-layer neural network:
 $$
+\require{mathtools}
 \text{Affine}_1 \rightarrow f \rightarrow \text{Affine}_2 \rightarrow g
 $$
 
 Where $\text{Affine}_i  = \textbf{W}^{(i)}\textbf{x} + \textbf{b}^{(i)}$ is the $i$-th affine transformation, $f = \text{ReLU}(\cdot)$ is the Rectified Linear Unit activation function and $g$ is the identity funciton.
 
-When an input $\textbf{x} \in \real^n$ is provided to the network,
-$\hat{\textbf{y}} \in \real^k$ is produced by the network.
+When an input $\textbf{x} \in R^n$ is provided to the network,
+$\hat{\textbf{y}} \in R^k$ is produced by the network.
 
 To train this network, we choose the MSE loss function
 $\ell_{\text{MSE}} (\hat{\textbf{y}}, \textbf{y}) =
