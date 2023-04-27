@@ -8,7 +8,7 @@ _(Adapted from an exerice from Yan LeCun's Deep Learning Course)_
 
 We have the following two-layer neural network:
 $$
-\require{mathtools}
+\require{ams}
 \text{Affine}_1 \rightarrow f \rightarrow \text{Affine}_2 \rightarrow g
 $$
 
