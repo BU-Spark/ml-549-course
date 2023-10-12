@@ -69,7 +69,22 @@ If you haven't already,
 
 ### Virtual Environment Setup
 
-Create a Conda or `venv` virtual environment for this project. For example:
+Create a Conda or `venv` virtual environment for this project on SCC, preferable in your workspace on `/projectnb/ds549/students`. You can either do it after you get VS Code with Remote Development working and connected and do it in the integrated terminal, or you can connect to https://scc1-ondemand.bu.edu and connect to a login node.
+
+Remember that the default python version on SCC is quite old, so we suggest you load a newer version before you create the virtual environment.
+
+```bash
+# show what python versions are available
+module avail python3
+
+# pick the latest version available. Might be different when you read this.
+module load python3/3.10.12
+
+# check python version
+python --version
+```
+
+For example:
 
 ```bash
 # Conda
@@ -136,7 +151,7 @@ enumerate the GPUs available on SCC with the `qqpus` command.
 
 ```bash
 # list GPUS and their status
-$ qqpus
+$ qgpus
 ```
 
 But you cannot execute Jupyter cells on the GPU.
