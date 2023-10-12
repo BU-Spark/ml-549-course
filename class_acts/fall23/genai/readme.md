@@ -136,7 +136,7 @@ enumerate the GPUs available on SCC with the `qqpus` command.
 
 ```bash
 # list GPUS and their status
-$ qqpus
+$ qgpus
 ```
 
 But you cannot execute Jupyter cells on the GPU.
