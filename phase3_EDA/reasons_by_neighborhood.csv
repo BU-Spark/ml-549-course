@@ -1,0 +1,595 @@
+neighborhood,reason,count
+ ,Cemetery,7.0
+ ,Code Enforcement,9.0
+ ,Employee & General Comments,278.0
+ ,Enforcement & Abandoned Vehicles,17.0
+ ,Environmental Services,3.0
+ ,Health,1.0
+ ,Highway Maintenance,21.0
+ ,Housing,5.0
+ ,Needle Program,7.0
+ ,Office of The Parking Clerk,2.0
+ ,Park Maintenance & Safety,101.0
+ ,Sanitation,4.0
+ ,Signs & Signals,9.0
+ ,Street Cleaning,5.0
+ ,Street Lights,1.0
+ ,Traffic Management & Engineering,3.0
+ ,Trees,3.0
+Allston,Administrative & General Requests,3.0
+Allston,Animal Issues,5.0
+Allston,Building,8.0
+Allston,Code Enforcement,29.0
+Allston,Enforcement & Abandoned Vehicles,20.0
+Allston,Environmental Services,1.0
+Allston,Graffiti,1.0
+Allston,Health,1.0
+Allston,Highway Maintenance,13.0
+Allston,Housing,17.0
+Allston,Park Maintenance & Safety,9.0
+Allston,Recycling,2.0
+Allston,Sanitation,7.0
+Allston,Signs & Signals,3.0
+Allston,Street Cleaning,19.0
+Allston,Street Lights,2.0
+Allston,Trees,1.0
+Allston / Brighton,Abandoned Bicycle,6.0
+Allston / Brighton,Administrative & General Requests,13.0
+Allston / Brighton,Air Pollution Control,2.0
+Allston / Brighton,Animal Issues,32.0
+Allston / Brighton,Building,86.0
+Allston / Brighton,Catchbasin,2.0
+Allston / Brighton,Code Enforcement,921.0
+Allston / Brighton,Employee & General Comments,3.0
+Allston / Brighton,Enforcement & Abandoned Vehicles,1065.0
+Allston / Brighton,Environmental Services,59.0
+Allston / Brighton,Fire Hydrant,1.0
+Allston / Brighton,Generic Noise Disturbance,1.0
+Allston / Brighton,Graffiti,6.0
+Allston / Brighton,Health,15.0
+Allston / Brighton,Highway Maintenance,295.0
+Allston / Brighton,Housing,120.0
+Allston / Brighton,Needle Program,19.0
+Allston / Brighton,Notification,4.0
+Allston / Brighton,Park Maintenance & Safety,25.0
+Allston / Brighton,Parking Complaints,2.0
+Allston / Brighton,Pothole,2.0
+Allston / Brighton,Programs,3.0
+Allston / Brighton,Recycling,154.0
+Allston / Brighton,Sanitation,341.0
+Allston / Brighton,Sidewalk Cover / Manhole,1.0
+Allston / Brighton,Signs & Signals,169.0
+Allston / Brighton,Street Cleaning,489.0
+Allston / Brighton,Street Lights,69.0
+Allston / Brighton,Traffic Management & Engineering,6.0
+Allston / Brighton,Trees,32.0
+Allston / Brighton,Weights and Measures,2.0
+Back Bay,Abandoned Bicycle,11.0
+Back Bay,Administrative & General Requests,13.0
+Back Bay,Animal Issues,6.0
+Back Bay,Building,43.0
+Back Bay,Catchbasin,2.0
+Back Bay,Code Enforcement,459.0
+Back Bay,Employee & General Comments,1.0
+Back Bay,Enforcement & Abandoned Vehicles,678.0
+Back Bay,Environmental Services,18.0
+Back Bay,Fire Department,1.0
+Back Bay,Graffiti,47.0
+Back Bay,Health,19.0
+Back Bay,Highway Maintenance,439.0
+Back Bay,Housing,31.0
+Back Bay,Needle Program,99.0
+Back Bay,Neighborhood Services Issues,1.0
+Back Bay,Noise Disturbance,1.0
+Back Bay,Notification,1.0
+Back Bay,Park Maintenance & Safety,32.0
+Back Bay,Pothole,3.0
+Back Bay,Programs,1.0
+Back Bay,Recycling,12.0
+Back Bay,Sanitation,115.0
+Back Bay,Sidewalk Cover / Manhole,3.0
+Back Bay,Signs & Signals,85.0
+Back Bay,Street Cleaning,416.0
+Back Bay,Street Lights,183.0
+Back Bay,Traffic Management & Engineering,3.0
+Back Bay,Trees,17.0
+Beacon Hill,Abandoned Bicycle,6.0
+Beacon Hill,Administrative & General Requests,2.0
+Beacon Hill,Animal Issues,10.0
+Beacon Hill,Building,30.0
+Beacon Hill,Code Enforcement,419.0
+Beacon Hill,Employee & General Comments,3.0
+Beacon Hill,Enforcement & Abandoned Vehicles,177.0
+Beacon Hill,Environmental Services,9.0
+Beacon Hill,Graffiti,1.0
+Beacon Hill,Health,4.0
+Beacon Hill,Highway Maintenance,157.0
+Beacon Hill,Housing,13.0
+Beacon Hill,Needle Program,22.0
+Beacon Hill,Notification,1.0
+Beacon Hill,Park Maintenance & Safety,17.0
+Beacon Hill,Programs,1.0
+Beacon Hill,Recycling,6.0
+Beacon Hill,Sanitation,109.0
+Beacon Hill,Sidewalk Cover / Manhole,1.0
+Beacon Hill,Signs & Signals,36.0
+Beacon Hill,Street Cleaning,467.0
+Beacon Hill,Street Lights,100.0
+Beacon Hill,Trees,4.0
+Boston,Abandoned Bicycle,11.0
+Boston,Administrative & General Requests,18.0
+Boston,Air Pollution Control,4.0
+Boston,Animal Issues,32.0
+Boston,Building,101.0
+Boston,Catchbasin,2.0
+Boston,Code Enforcement,263.0
+Boston,Employee & General Comments,2.0
+Boston,Enforcement & Abandoned Vehicles,378.0
+Boston,Environmental Services,34.0
+Boston,Fire Hydrant,2.0
+Boston,Graffiti,15.0
+Boston,Health,73.0
+Boston,Highway Maintenance,175.0
+Boston,Housing,40.0
+Boston,Needle Program,70.0
+Boston,Noise Disturbance,7.0
+Boston,Notification,24.0
+Boston,Operations,1.0
+Boston,Park Maintenance & Safety,82.0
+Boston,Pothole,2.0
+Boston,Programs,1.0
+Boston,Recycling,3.0
+Boston,Sanitation,83.0
+Boston,Sidewalk Cover / Manhole,4.0
+Boston,Signs & Signals,43.0
+Boston,Street Cleaning,213.0
+Boston,Street Lights,69.0
+Boston,Traffic Management & Engineering,4.0
+Boston,Trees,47.0
+Brighton,Abandoned Bicycle,1.0
+Brighton,Administrative & General Requests,1.0
+Brighton,Animal Issues,5.0
+Brighton,Building,22.0
+Brighton,Catchbasin,1.0
+Brighton,Code Enforcement,55.0
+Brighton,Employee & General Comments,1.0
+Brighton,Enforcement & Abandoned Vehicles,64.0
+Brighton,Environmental Services,4.0
+Brighton,Health,5.0
+Brighton,Highway Maintenance,35.0
+Brighton,Housing,11.0
+Brighton,Needle Program,3.0
+Brighton,Notification,5.0
+Brighton,Park Maintenance & Safety,10.0
+Brighton,Recycling,6.0
+Brighton,Sanitation,23.0
+Brighton,Signs & Signals,6.0
+Brighton,Street Cleaning,28.0
+Brighton,Street Lights,4.0
+Brighton,Trees,3.0
+Charlestown,Abandoned Bicycle,3.0
+Charlestown,Administrative & General Requests,15.0
+Charlestown,Animal Issues,16.0
+Charlestown,Building,56.0
+Charlestown,Catchbasin,1.0
+Charlestown,Code Enforcement,345.0
+Charlestown,Employee & General Comments,2.0
+Charlestown,Enforcement & Abandoned Vehicles,766.0
+Charlestown,Environmental Services,11.0
+Charlestown,Generic Noise Disturbance,1.0
+Charlestown,Graffiti,5.0
+Charlestown,Health,4.0
+Charlestown,Highway Maintenance,150.0
+Charlestown,Housing,26.0
+Charlestown,Needle Program,27.0
+Charlestown,Notification,4.0
+Charlestown,Operations,1.0
+Charlestown,Park Maintenance & Safety,36.0
+Charlestown,Pothole,2.0
+Charlestown,Recycling,63.0
+Charlestown,Sanitation,120.0
+Charlestown,Sidewalk Cover / Manhole,6.0
+Charlestown,Signs & Signals,70.0
+Charlestown,Street Cleaning,204.0
+Charlestown,Street Lights,111.0
+Charlestown,Traffic Management & Engineering,2.0
+Charlestown,Trees,49.0
+Chestnut Hill,Health,2.0
+Chestnut Hill,Recycling,1.0
+Chestnut Hill,Street Cleaning,1.0
+Dorchester,Abandoned Bicycle,15.0
+Dorchester,Administrative & General Requests,35.0
+Dorchester,Air Pollution Control,1.0
+Dorchester,Animal Issues,97.0
+Dorchester,Billing,1.0
+Dorchester,Building,155.0
+Dorchester,Catchbasin,6.0
+Dorchester,Code Enforcement,1584.0
+Dorchester,Employee & General Comments,26.0
+Dorchester,Enforcement & Abandoned Vehicles,2195.0
+Dorchester,Environmental Services,112.0
+Dorchester,Fire Hydrant,10.0
+Dorchester,Generic Noise Disturbance,2.0
+Dorchester,Graffiti,24.0
+Dorchester,Health,45.0
+Dorchester,Highway Maintenance,500.0
+Dorchester,Housing,296.0
+Dorchester,Needle Program,154.0
+Dorchester,Neighborhood Services Issues,2.0
+Dorchester,Noise Disturbance,1.0
+Dorchester,Notification,21.0
+Dorchester,Park Maintenance & Safety,167.0
+Dorchester,Programs,3.0
+Dorchester,Recycling,343.0
+Dorchester,Sanitation,1426.0
+Dorchester,Sidewalk Cover / Manhole,8.0
+Dorchester,Signs & Signals,259.0
+Dorchester,Street Cleaning,1353.0
+Dorchester,Street Lights,241.0
+Dorchester,Traffic Management & Engineering,10.0
+Dorchester,Trees,54.0
+Dorchester,Weights and Measures,2.0
+Downtown / Financial District,Abandoned Bicycle,8.0
+Downtown / Financial District,Administrative & General Requests,10.0
+Downtown / Financial District,Animal Issues,17.0
+Downtown / Financial District,Building,71.0
+Downtown / Financial District,Catchbasin,2.0
+Downtown / Financial District,Code Enforcement,681.0
+Downtown / Financial District,Employee & General Comments,7.0
+Downtown / Financial District,Enforcement & Abandoned Vehicles,807.0
+Downtown / Financial District,Environmental Services,22.0
+Downtown / Financial District,Graffiti,34.0
+Downtown / Financial District,Health,26.0
+Downtown / Financial District,Highway Maintenance,345.0
+Downtown / Financial District,Housing,46.0
+Downtown / Financial District,Needle Program,72.0
+Downtown / Financial District,Neighborhood Services Issues,2.0
+Downtown / Financial District,Notification,12.0
+Downtown / Financial District,Operations,1.0
+Downtown / Financial District,Park Maintenance & Safety,71.0
+Downtown / Financial District,Pothole,1.0
+Downtown / Financial District,Programs,1.0
+Downtown / Financial District,Recycling,7.0
+Downtown / Financial District,Sanitation,133.0
+Downtown / Financial District,Sidewalk Cover / Manhole,3.0
+Downtown / Financial District,Signs & Signals,178.0
+Downtown / Financial District,Street Cleaning,652.0
+Downtown / Financial District,Street Lights,170.0
+Downtown / Financial District,Traffic Management & Engineering,13.0
+Downtown / Financial District,Trees,27.0
+East Boston,Abandoned Bicycle,7.0
+East Boston,Administrative & General Requests,16.0
+East Boston,Animal Issues,18.0
+East Boston,Building,122.0
+East Boston,Catchbasin,2.0
+East Boston,Code Enforcement,620.0
+East Boston,Employee & General Comments,3.0
+East Boston,Enforcement & Abandoned Vehicles,1935.0
+East Boston,Environmental Services,31.0
+East Boston,Fire Department,1.0
+East Boston,Graffiti,29.0
+East Boston,Health,11.0
+East Boston,Highway Maintenance,487.0
+East Boston,Housing,62.0
+East Boston,Needle Program,16.0
+East Boston,Notification,8.0
+East Boston,Park Maintenance & Safety,49.0
+East Boston,Parking Complaints,1.0
+East Boston,Pothole,3.0
+East Boston,Recycling,91.0
+East Boston,Sanitation,197.0
+East Boston,Sidewalk Cover / Manhole,1.0
+East Boston,Signs & Signals,140.0
+East Boston,Street Cleaning,454.0
+East Boston,Street Lights,59.0
+East Boston,Traffic Management & Engineering,1.0
+East Boston,Trees,56.0
+Fenway / Kenmore / Audubon Circle / Longwood,Abandoned Bicycle,1.0
+Fenway / Kenmore / Audubon Circle / Longwood,Administrative & General Requests,1.0
+Fenway / Kenmore / Audubon Circle / Longwood,Air Pollution Control,1.0
+Fenway / Kenmore / Audubon Circle / Longwood,Animal Issues,7.0
+Fenway / Kenmore / Audubon Circle / Longwood,Building,30.0
+Fenway / Kenmore / Audubon Circle / Longwood,Catchbasin,2.0
+Fenway / Kenmore / Audubon Circle / Longwood,Code Enforcement,131.0
+Fenway / Kenmore / Audubon Circle / Longwood,Employee & General Comments,1.0
+Fenway / Kenmore / Audubon Circle / Longwood,Enforcement & Abandoned Vehicles,202.0
+Fenway / Kenmore / Audubon Circle / Longwood,Environmental Services,12.0
+Fenway / Kenmore / Audubon Circle / Longwood,Fire Department,1.0
+Fenway / Kenmore / Audubon Circle / Longwood,Generic Noise Disturbance,1.0
+Fenway / Kenmore / Audubon Circle / Longwood,Graffiti,3.0
+Fenway / Kenmore / Audubon Circle / Longwood,Health,26.0
+Fenway / Kenmore / Audubon Circle / Longwood,Highway Maintenance,195.0
+Fenway / Kenmore / Audubon Circle / Longwood,Housing,54.0
+Fenway / Kenmore / Audubon Circle / Longwood,Needle Program,20.0
+Fenway / Kenmore / Audubon Circle / Longwood,Notification,3.0
+Fenway / Kenmore / Audubon Circle / Longwood,Operations,1.0
+Fenway / Kenmore / Audubon Circle / Longwood,Park Maintenance & Safety,19.0
+Fenway / Kenmore / Audubon Circle / Longwood,Recycling,3.0
+Fenway / Kenmore / Audubon Circle / Longwood,Sanitation,32.0
+Fenway / Kenmore / Audubon Circle / Longwood,Sidewalk Cover / Manhole,3.0
+Fenway / Kenmore / Audubon Circle / Longwood,Signs & Signals,87.0
+Fenway / Kenmore / Audubon Circle / Longwood,Street Cleaning,122.0
+Fenway / Kenmore / Audubon Circle / Longwood,Street Lights,54.0
+Fenway / Kenmore / Audubon Circle / Longwood,Traffic Management & Engineering,1.0
+Fenway / Kenmore / Audubon Circle / Longwood,Trees,21.0
+Greater Mattapan,Abandoned Bicycle,6.0
+Greater Mattapan,Administrative & General Requests,14.0
+Greater Mattapan,Animal Issues,36.0
+Greater Mattapan,Building,48.0
+Greater Mattapan,Code Enforcement,399.0
+Greater Mattapan,Employee & General Comments,6.0
+Greater Mattapan,Enforcement & Abandoned Vehicles,329.0
+Greater Mattapan,Environmental Services,16.0
+Greater Mattapan,Graffiti,1.0
+Greater Mattapan,Health,5.0
+Greater Mattapan,Highway Maintenance,233.0
+Greater Mattapan,Housing,144.0
+Greater Mattapan,Needle Program,17.0
+Greater Mattapan,Noise Disturbance,1.0
+Greater Mattapan,Notification,9.0
+Greater Mattapan,Operations,1.0
+Greater Mattapan,Park Maintenance & Safety,27.0
+Greater Mattapan,Parking Complaints,1.0
+Greater Mattapan,Programs,1.0
+Greater Mattapan,Recycling,74.0
+Greater Mattapan,Sanitation,546.0
+Greater Mattapan,Sidewalk Cover / Manhole,1.0
+Greater Mattapan,Signs & Signals,84.0
+Greater Mattapan,Street Cleaning,309.0
+Greater Mattapan,Street Lights,89.0
+Greater Mattapan,Traffic Management & Engineering,4.0
+Greater Mattapan,Trees,28.0
+Hyde Park,Abandoned Bicycle,2.0
+Hyde Park,Administrative & General Requests,14.0
+Hyde Park,Animal Issues,40.0
+Hyde Park,Building,52.0
+Hyde Park,Catchbasin,2.0
+Hyde Park,Code Enforcement,292.0
+Hyde Park,Employee & General Comments,7.0
+Hyde Park,Enforcement & Abandoned Vehicles,282.0
+Hyde Park,Environmental Services,16.0
+Hyde Park,Fire Hydrant,2.0
+Hyde Park,Graffiti,29.0
+Hyde Park,Health,19.0
+Hyde Park,Highway Maintenance,206.0
+Hyde Park,Housing,61.0
+Hyde Park,Needle Program,5.0
+Hyde Park,Neighborhood Services Issues,1.0
+Hyde Park,Notification,6.0
+Hyde Park,Park Maintenance & Safety,15.0
+Hyde Park,Pothole,5.0
+Hyde Park,Programs,5.0
+Hyde Park,Recycling,279.0
+Hyde Park,Sanitation,431.0
+Hyde Park,Signs & Signals,90.0
+Hyde Park,Street Cleaning,365.0
+Hyde Park,Street Lights,52.0
+Hyde Park,Traffic Management & Engineering,3.0
+Hyde Park,Trees,26.0
+Hyde Park,Weights and Measures,1.0
+Jamaica Plain,Abandoned Bicycle,5.0
+Jamaica Plain,Administrative & General Requests,18.0
+Jamaica Plain,Animal Issues,63.0
+Jamaica Plain,Building,79.0
+Jamaica Plain,Catchbasin,3.0
+Jamaica Plain,Code Enforcement,819.0
+Jamaica Plain,Employee & General Comments,5.0
+Jamaica Plain,Enforcement & Abandoned Vehicles,699.0
+Jamaica Plain,Environmental Services,21.0
+Jamaica Plain,Fire Hydrant,3.0
+Jamaica Plain,Graffiti,3.0
+Jamaica Plain,Health,10.0
+Jamaica Plain,Highway Maintenance,426.0
+Jamaica Plain,Housing,94.0
+Jamaica Plain,Needle Program,28.0
+Jamaica Plain,Noise Disturbance,2.0
+Jamaica Plain,Notification,5.0
+Jamaica Plain,Operations,1.0
+Jamaica Plain,Park Maintenance & Safety,62.0
+Jamaica Plain,Pothole,2.0
+Jamaica Plain,Recycling,192.0
+Jamaica Plain,Sanitation,358.0
+Jamaica Plain,Sidewalk Cover / Manhole,4.0
+Jamaica Plain,Signs & Signals,188.0
+Jamaica Plain,Street Cleaning,436.0
+Jamaica Plain,Street Lights,117.0
+Jamaica Plain,Traffic Management & Engineering,6.0
+Jamaica Plain,Trees,47.0
+Mattapan,Abandoned Bicycle,1.0
+Mattapan,Animal Issues,1.0
+Mattapan,Building,5.0
+Mattapan,Code Enforcement,13.0
+Mattapan,Enforcement & Abandoned Vehicles,3.0
+Mattapan,Highway Maintenance,2.0
+Mattapan,Housing,9.0
+Mattapan,Needle Program,2.0
+Mattapan,Noise Disturbance,1.0
+Mattapan,Park Maintenance & Safety,4.0
+Mattapan,Recycling,1.0
+Mattapan,Sanitation,7.0
+Mattapan,Signs & Signals,2.0
+Mattapan,Street Cleaning,19.0
+Mattapan,Street Lights,1.0
+Mattapan,Trees,1.0
+Mission Hill,Administrative & General Requests,8.0
+Mission Hill,Animal Issues,7.0
+Mission Hill,Building,22.0
+Mission Hill,Catchbasin,2.0
+Mission Hill,Code Enforcement,138.0
+Mission Hill,Employee & General Comments,3.0
+Mission Hill,Enforcement & Abandoned Vehicles,208.0
+Mission Hill,Environmental Services,12.0
+Mission Hill,Graffiti,19.0
+Mission Hill,Health,1.0
+Mission Hill,Highway Maintenance,145.0
+Mission Hill,Housing,61.0
+Mission Hill,Needle Program,6.0
+Mission Hill,Notification,5.0
+Mission Hill,Park Maintenance & Safety,7.0
+Mission Hill,Pothole,1.0
+Mission Hill,Programs,1.0
+Mission Hill,Recycling,26.0
+Mission Hill,Sanitation,53.0
+Mission Hill,Sidewalk Cover / Manhole,1.0
+Mission Hill,Signs & Signals,54.0
+Mission Hill,Street Cleaning,90.0
+Mission Hill,Street Lights,30.0
+Mission Hill,Traffic Management & Engineering,7.0
+Mission Hill,Trees,83.0
+Roslindale,Abandoned Bicycle,4.0
+Roslindale,Administrative & General Requests,14.0
+Roslindale,Air Pollution Control,1.0
+Roslindale,Animal Issues,35.0
+Roslindale,Building,23.0
+Roslindale,Code Enforcement,380.0
+Roslindale,Employee & General Comments,4.0
+Roslindale,Enforcement & Abandoned Vehicles,387.0
+Roslindale,Environmental Services,9.0
+Roslindale,Fire Hydrant,2.0
+Roslindale,Generic Noise Disturbance,1.0
+Roslindale,Graffiti,9.0
+Roslindale,Health,8.0
+Roslindale,Highway Maintenance,173.0
+Roslindale,Housing,41.0
+Roslindale,Needle Program,6.0
+Roslindale,Noise Disturbance,1.0
+Roslindale,Notification,5.0
+Roslindale,Operations,1.0
+Roslindale,Park Maintenance & Safety,30.0
+Roslindale,Programs,2.0
+Roslindale,Recycling,71.0
+Roslindale,Sanitation,344.0
+Roslindale,Sidewalk Cover / Manhole,3.0
+Roslindale,Signs & Signals,124.0
+Roslindale,Street Cleaning,301.0
+Roslindale,Street Lights,56.0
+Roslindale,Traffic Management & Engineering,11.0
+Roslindale,Trees,36.0
+Roslindale,Weights and Measures,1.0
+Roxbury,Abandoned Bicycle,11.0
+Roxbury,Administrative & General Requests,27.0
+Roxbury,Animal Issues,69.0
+Roxbury,Building,92.0
+Roxbury,Catchbasin,5.0
+Roxbury,Code Enforcement,817.0
+Roxbury,Employee & General Comments,7.0
+Roxbury,Enforcement & Abandoned Vehicles,1019.0
+Roxbury,Environmental Services,56.0
+Roxbury,Fire Hydrant,4.0
+Roxbury,Graffiti,6.0
+Roxbury,Health,20.0
+Roxbury,Highway Maintenance,298.0
+Roxbury,Housing,272.0
+Roxbury,Needle Program,270.0
+Roxbury,Neighborhood Services Issues,1.0
+Roxbury,Noise Disturbance,6.0
+Roxbury,Notification,9.0
+Roxbury,Operations,4.0
+Roxbury,Park Maintenance & Safety,105.0
+Roxbury,Programs,2.0
+Roxbury,Recycling,125.0
+Roxbury,Sanitation,616.0
+Roxbury,Sidewalk Cover / Manhole,10.0
+Roxbury,Signs & Signals,222.0
+Roxbury,Street Cleaning,849.0
+Roxbury,Street Lights,108.0
+Roxbury,Traffic Management & Engineering,23.0
+Roxbury,Trees,42.0
+Roxbury,Weights and Measures,2.0
+South Boston,Administrative & General Requests,8.0
+South Boston,Animal Issues,9.0
+South Boston,Building,35.0
+South Boston,Code Enforcement,74.0
+South Boston,Enforcement & Abandoned Vehicles,243.0
+South Boston,Environmental Services,8.0
+South Boston,Health,11.0
+South Boston,Highway Maintenance,17.0
+South Boston,Housing,20.0
+South Boston,Needle Program,19.0
+South Boston,Notification,2.0
+South Boston,Park Maintenance & Safety,12.0
+South Boston,Parking Complaints,1.0
+South Boston,Recycling,11.0
+South Boston,Sanitation,27.0
+South Boston,Signs & Signals,7.0
+South Boston,Street Cleaning,87.0
+South Boston,Street Lights,6.0
+South Boston,Trees,3.0
+South Boston / South Boston Waterfront,Abandoned Bicycle,2.0
+South Boston / South Boston Waterfront,Administrative & General Requests,11.0
+South Boston / South Boston Waterfront,Animal Issues,34.0
+South Boston / South Boston Waterfront,Building,127.0
+South Boston / South Boston Waterfront,Catchbasin,3.0
+South Boston / South Boston Waterfront,Code Enforcement,877.0
+South Boston / South Boston Waterfront,Enforcement & Abandoned Vehicles,2530.0
+South Boston / South Boston Waterfront,Environmental Services,39.0
+South Boston / South Boston Waterfront,Generic Noise Disturbance,1.0
+South Boston / South Boston Waterfront,Graffiti,10.0
+South Boston / South Boston Waterfront,Health,21.0
+South Boston / South Boston Waterfront,Highway Maintenance,211.0
+South Boston / South Boston Waterfront,Housing,44.0
+South Boston / South Boston Waterfront,Needle Program,161.0
+South Boston / South Boston Waterfront,Neighborhood Services Issues,1.0
+South Boston / South Boston Waterfront,Noise Disturbance,1.0
+South Boston / South Boston Waterfront,Notification,11.0
+South Boston / South Boston Waterfront,Park Maintenance & Safety,30.0
+South Boston / South Boston Waterfront,Pothole,1.0
+South Boston / South Boston Waterfront,Recycling,127.0
+South Boston / South Boston Waterfront,Sanitation,327.0
+South Boston / South Boston Waterfront,Sidewalk Cover / Manhole,1.0
+South Boston / South Boston Waterfront,Signs & Signals,164.0
+South Boston / South Boston Waterfront,Street Cleaning,718.0
+South Boston / South Boston Waterfront,Street Lights,81.0
+South Boston / South Boston Waterfront,Traffic Management & Engineering,3.0
+South Boston / South Boston Waterfront,Trees,72.0
+South End,Abandoned Bicycle,8.0
+South End,Administrative & General Requests,10.0
+South End,Air Pollution Control,4.0
+South End,Animal Issues,16.0
+South End,Building,52.0
+South End,Code Enforcement,775.0
+South End,Employee & General Comments,1.0
+South End,Enforcement & Abandoned Vehicles,712.0
+South End,Environmental Services,48.0
+South End,Fire Hydrant,2.0
+South End,Graffiti,55.0
+South End,Health,8.0
+South End,Highway Maintenance,360.0
+South End,Housing,40.0
+South End,Needle Program,269.0
+South End,Neighborhood Services Issues,1.0
+South End,Noise Disturbance,2.0
+South End,Notification,2.0
+South End,Park Maintenance & Safety,73.0
+South End,Recycling,29.0
+South End,Sanitation,242.0
+South End,Sidewalk Cover / Manhole,1.0
+South End,Signs & Signals,76.0
+South End,Street Cleaning,717.0
+South End,Street Lights,118.0
+South End,Traffic Management & Engineering,7.0
+South End,Trees,38.0
+West Roxbury,Administrative & General Requests,10.0
+West Roxbury,Animal Issues,25.0
+West Roxbury,Building,34.0
+West Roxbury,Catchbasin,5.0
+West Roxbury,Code Enforcement,328.0
+West Roxbury,Employee & General Comments,6.0
+West Roxbury,Enforcement & Abandoned Vehicles,186.0
+West Roxbury,Environmental Services,18.0
+West Roxbury,Health,9.0
+West Roxbury,Highway Maintenance,130.0
+West Roxbury,Housing,22.0
+West Roxbury,Needle Program,5.0
+West Roxbury,Noise Disturbance,1.0
+West Roxbury,Notification,4.0
+West Roxbury,Park Maintenance & Safety,17.0
+West Roxbury,Programs,2.0
+West Roxbury,Recycling,64.0
+West Roxbury,Sanitation,450.0
+West Roxbury,Sidewalk Cover / Manhole,2.0
+West Roxbury,Signs & Signals,95.0
+West Roxbury,Street Cleaning,159.0
+West Roxbury,Street Lights,50.0
+West Roxbury,Traffic Management & Engineering,4.0
+West Roxbury,Trees,72.0
