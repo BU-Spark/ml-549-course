@@ -1,4 +1,4 @@
-# ML-549 Course Docker Setup
+# Creating Reproducible Container Images
 
 Follow these steps to containerize a repository to create a reproducible environment using Docker. In this example we will use the ML-549 course repository as an example 
 
