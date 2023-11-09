@@ -2,4 +2,6 @@ pandas
 numpy
 seaborn
 matplotlib
-jupyter
+jupyterlab
+ipykernel
+notebook

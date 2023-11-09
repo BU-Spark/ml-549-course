@@ -1,5 +1,5 @@
 # Use an official Python runtime as a base image
-FROM python:3.8-slim
+FROM registry.access.redhat.com/ubi9/python-311:latest
 
 # Set the working directory in the container
 WORKDIR /app
