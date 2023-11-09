@@ -9,7 +9,7 @@ Follow these steps to containerize a repository to create a reproducible environ
 
 1. Clone the course repository or a repository of your choice:
 ```bash
-$ git clone git@github.com:oindrillac/ml-549-course.git
+$ git clone git@github.com:BU-Spark/ml-549-course.git
 $ cd ml-549-course
 ```
 
