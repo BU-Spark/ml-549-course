@@ -1,0 +1,5 @@
+jupyter
+torch
+torchvision
+torch-summary
+matplotlib
