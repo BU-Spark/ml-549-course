@@ -141,3 +141,29 @@ and finally to deactivate the virtual environment, just type
 $ deactivate
 ```
 as usual.
+
+## Interactive Jupyter Notebook Session
+
+### Academic ML Environment
+
+List of modules to load (space separated): miniconda academic-ml
+
+Pre-Launch Command (optional): conda activate spring-2024-pyt
+
+Interface: lab
+
+Working Directory: /projectnb/ds549/students/<your BU username>
+
+Then select hours, cores, GPUs, etc.
+
+### Custom Python Virtual Environment
+
+List of modules to load (space separated): python3
+
+Pre-Launch Command (optional): source /path/to/your/virtual/environemnt/bin/activate; ipython kernel install --user --name=<virtual env name>
+
+Interface: lab
+
+Working Directory: /projectnb/ds549/students/<your BU username>
+
+Then select hours, cores, GPUs, etc.
