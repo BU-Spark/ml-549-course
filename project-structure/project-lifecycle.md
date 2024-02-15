@@ -77,7 +77,7 @@ At this phase in the project, teams can present a modified plan for achieving pr
 **Deliverables from Phase 2**:
 
 - [ ] Research document markdown added to the project repository outlining possible approaches
-- [ ] Update [checklist for project completion section](project-outline-template.md#b-checklist-for-project-completion) with any new discoveries
+- [ ] Update [checklist for project completion section](project-document-template.md#c-checklist-for-project-completion) with any new discoveries
 
 ## Phase 3: Data Preparation and EDA: 
 
