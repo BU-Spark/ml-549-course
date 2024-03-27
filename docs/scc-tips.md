@@ -13,6 +13,34 @@ your browser, or graphical interface based sessions.
 
 To access OnDemand, navigate to https://scc-ondemand.bu.edu/ in recent versions of Chrome or Firefox.
 
+## Group Membership
+
+Once you are given access, you are added to the 'sparkgrp' group. You can see the groups you are in by running the command `groups` from a
+terminal prompt. It will likely show you more than one group, but one of them should be 'sparkgrp'.
+
+Note that even though you may be a member of several groups, your current default group may differ than the one you want. This could 
+lead to some confusing file ownership issues. It's a good idea to run `ls -al` to see what user and group a file is assigned to if you
+are having issues.
+
+To see what your current default group is, you can run
+
+```bash
+id -ng       # display current default group
+```
+
+To change your current default group to 'sparkgp', run
+
+```bash
+newgrp sparkgrp
+```
+
+Then run `id -ng` again and you should see the change.
+
+Note that running `newgrp` creates a new login shell, so you may have to rerun your conda or venv activate command again to
+activate the environment.
+
+When you are done, simply type `exit` to end the log in session. You can type `exit` again to exit the terminal session.
+
 ## Storage Quotas and Project Memberships
 Your home directory quota will most likely be 10GB which can easily be filled up
 once you start doing machine learning projects and setting up python virtual 
@@ -142,7 +170,37 @@ $ deactivate
 ```
 as usual.
 
-## Interactive Jupyter Notebook Session
+### Package Caches
+
+You find that even though you create and run virtual environments on your project folder, you get quote exceeded
+error for your home directory. This could be because conda or pip are caching python installation packages in
+your home directory.
+
+#### Conda
+
+For Conda, try running
+```bash
+conda info
+```
+And look for the section called `package cache :`. See [shared-pkg-cache](https://docs.anaconda.com/free/working-with-conda/packages/shared-pkg-cache/)
+for a little more info.
+
+#### PIP
+
+For PIP, try running
+
+```bash
+pip cache dir
+pip cache info
+```
+
+to find out more about where pip is caching. See [caching](https://pip.pypa.io/en/stable/topics/caching/) for more info.
+
+
+## Interactive Jupyter Notebook or Session
+
+Before you start an interactive Jupyter Notebook session in SCC OnDemand, you need to configure it
+to start your intended conda or python virtual environment. Two examples are shown below.
 
 ### Academic ML Environment
 
