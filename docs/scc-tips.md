@@ -204,24 +204,56 @@ to start your intended conda or python virtual environment. Two examples are sho
 
 ### Academic ML Environment
 
-List of modules to load (space separated): miniconda academic-ml
+List of modules to load (space separated): `miniconda academic-ml`
 
-Pre-Launch Command (optional): conda activate spring-2024-pyt
+Pre-Launch Command (optional): `conda activate spring-2024-pyt`
 
-Interface: lab
+Interface: `lab`
 
-Working Directory: /projectnb/ds549/students/<your BU username>
+Working Directory: `/projectnb/ds549/students/<your BU username>`
 
 Then select hours, cores, GPUs, etc.
 
 ### Custom Python Virtual Environment
 
-List of modules to load (space separated): python3
+List of modules to load (space separated): `python3`
 
-Pre-Launch Command (optional): source /path/to/your/virtual/environemnt/bin/activate; ipython kernel install --user --name=<virtual env name>
+Pre-Launch Command (optional): `source /path/to/your/virtual/environemnt/bin/activate; ipython kernel install --user --name=<virtual env name>`
 
-Interface: lab
+Interface: `lab`
 
-Working Directory: /projectnb/ds549/students/<your BU username>
+Working Directory: `/projectnb/ds549/students/<your BU username>`
 
 Then select hours, cores, GPUs, etc.
+
+## VS Code Remote Development on SCC Compute Node
+
+Here's a way to run VS Code locally with the remote development extension and connect to an SCC compute node, rather than just the SCC log-in node. You're not supposed to be running compute loads on scc1 (or scc2). It's just a log-in node where you can do some minor file management, and also connect to compute nodes.
+
+The first thing you need to do is to get a compute node assigned to you. There might be a more direct way to do this, but one way is to start an interactive VS Code session with the environment configuration as shown [above](#academic-ml-environment). Once the environment is allocated for you, look at your [My Interactive Sessions](https://scc-ondemand1.bu.edu/pun/sys/dashboard/batch_connect/sessions) on [SCC OnDemand](https://scc-ondemand1.bu.edu/pun/sys/dashboard/) to see which host was assigned to you. It should be in a blue box in the format of something like `>__scc-xyz`, where the exact name will be different for you. The `scc-xyz` part is the hostname.
+
+Now you can't directly connect to that compute node from your local machine via, for example, ssh. But you can get there in two hops:
+```sh
+# ssh to the SCC login node from your local machine
+ssh <username>@scc1.bu.edu
+
+# once you're on the login node you can connect to the remote machine.
+$ ssh scc-xyz
+```
+
+You can automate this by adding a configuration to your `.ssh/config` file:
+
+```sh
+Host scc-xyz    # change this to the actual compute node you want to connect to
+  Hostname scc-xyz    # update this with the real compute node name
+  User <username>     # replace with your username
+  ProxyJump scc1.bu.edu   # this says that you need to first log-in here
+```
+
+Now you can try this from your local command line.
+```sh
+ssh scc-xyz
+```
+It might ask you to log in twice, but should work.
+
+Then for VSCode remote development, you can now put  `scc-xyz` as your remote host.
