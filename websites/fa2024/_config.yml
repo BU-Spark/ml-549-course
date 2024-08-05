@@ -1,9 +1,12 @@
-title: DS549 -- Spark! Machine Learning Practicum
+title: DS549
 description: BU Spark ML Practicum
 theme: just-the-docs
 
 baseurl: "/ml-549-course/fa2024"
 url: "https://bu-spark.github.io"
+
+exclude:
+  - README.md
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: /assets/images/logo.png

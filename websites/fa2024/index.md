@@ -2,7 +2,7 @@
 title: Home
 layout: home
 nav_order: 1
-description: "Foundation in programmatic tools for data science."
+description: "Home page for DS549 ML Practicum"
 permalink: /
 ---
 
