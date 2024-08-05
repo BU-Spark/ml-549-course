@@ -1,0 +1,72 @@
+title: DS701 -- Tools for Data Science
+description: A first course in the BU MSDS program.
+theme: just-the-docs
+
+url: https://tools4ds.github.io/fa2024
+
+# Set a path/url to a logo that will be displayed instead of the title
+#logo: /assets/images/logo.png
+
+# Set a path/url to a favicon that will be displayed in the browser
+#favicon: /assets/images/favicon.ico
+
+# Enable or disable the site search
+# Supports true (default) or false
+search_enabled: true
+
+search:
+  # Split pages into sections that can be searched individually
+  # Supports 1 - 6, default: 2
+  heading_level: 2
+  # Maximum amount of previews per search result
+  # Default: 3
+  previews: 3
+  # Maximum amount of words to display before a matched word in the preview
+  # Default: 5
+  preview_words_before: 5
+  # Maximum amount of words to display after a matched word in the preview
+  # Default: 10
+  preview_words_after: 10
+  # Set the search token separator
+  # Default: /[\s\-/]+/
+  # Example: enable support for hyphenated search words
+  tokenizer_separator: /[\s/]+/
+  # Display the relative url in search results
+  # Supports true (default) or false
+  rel_url: true
+  # Enable or disable the search button that appears in the bottom right corner of every page
+  # Supports true or false (default)
+  button: false
+  # Focus the search input by pressing `ctrl + focus_shortcut_key` (or `cmd + focus_shortcut_key` on macOS)
+  focus_shortcut_key: 'k'
+
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.3"
+
+aux_links:
+  DS701 Course Notes: https://tools4ds.github.io/DS701-Course-Notes/
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/tools4ds/fa2024" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+# Color scheme supports "light" (default) and "dark"
+color_scheme: dark
+
+# Google Analytics Tracking (optional)
+# Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
+#ga_tracking: UA-2709176-10
+#ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
