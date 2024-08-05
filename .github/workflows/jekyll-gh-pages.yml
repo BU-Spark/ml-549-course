@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./website/fa2024
+        working-directory: ./websites/fa2024
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,7 +39,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./website/fa2024
+          source: ./websites/fa2024
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
