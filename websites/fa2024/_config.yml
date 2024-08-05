@@ -1,8 +1,8 @@
-title: DS701 -- Tools for Data Science
-description: A first course in the BU MSDS program.
+title: DS549 -- Spark! Machine Learning Practicum
+description: BU Spark ML Practicum
 theme: just-the-docs
 
-url: https://tools4ds.github.io/fa2024
+url: https://bu-spark.github.io/ml-549-course/fa2024
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: /assets/images/logo.png
@@ -45,8 +45,8 @@ mermaid:
   # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
   version: "9.1.3"
 
-aux_links:
-  DS701 Course Notes: https://tools4ds.github.io/DS701-Course-Notes/
+#aux_links:
+#  DS701 Course Notes: https://tools4ds.github.io/DS701-Course-Notes/
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
