@@ -4,7 +4,10 @@ name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: 
+      - "main"
+    paths:
+      - "website/fa2024/**"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -25,6 +28,9 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./website/fa2024
     steps:
       - name: Checkout
         uses: actions/checkout@v4
