@@ -1,22 +1,17 @@
 ---
-layout: default
+layout: schedule
 title: Schedule
 nav_order: 2
 ---
+# Fall 2024 CS/DS-549 Lecture Schedule
 
-# Course Schedule
-{: .no_toc }
+_The schedule is subject to change. Check back regularly!_
 
-## Table of contents
-{: .no_toc .text-delta }
+Students must also participate in associated Spark! event. 
+See [https://www.bu.edu/spark/events/](https://www.bu.edu/spark/events/) for schedule.
 
-1. TOC
-{:toc}
+<iframe
+    src="https://docs.google.com/document/d/1Oqw7d0llze8kbZqd1ITEJY7PNaZybtbjlyeAHzjb6Fc/pub?embedded=true" 
+    style="width: 950px; height: 4400px; border: none;">
+</iframe>
 
----
-
-Blah blah tecxt here.
-
-## Next Section
-
-More text here.

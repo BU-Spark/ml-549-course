@@ -1,4 +1,4 @@
-title: DS549
+title: CS/DS-549
 description: BU Spark ML Practicum
 theme: just-the-docs
 
@@ -49,8 +49,8 @@ mermaid:
   # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
   version: "9.1.3"
 
-#aux_links:
-#  DS701 Course Notes: https://tools4ds.github.io/DS701-Course-Notes/
+aux_links:
+  Course Github Repo: https://github.com/bu-spark/ml-549-course
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
@@ -62,13 +62,13 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/tools4ds/fa2024" # the github URL for your repo
+gh_edit_repository: "https://github.com/bu-spark/ml-549-course" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
-# gh_edit_source: docs # the source that your files originate from
+gh_edit_source: "websites/fa2024" # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
 # Color scheme supports "light" (default) and "dark"
-color_scheme: dark
+color_scheme: light
 
 # Google Analytics Tracking (optional)
 # Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
