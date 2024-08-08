@@ -14,9 +14,26 @@ nav_order: 3
 {:toc}
 
 ---
+## Project 1
 
-Blah blah tecxt here.
+Project description TBD.
 
-## Next Section
+---
+## Project 2
 
-More text here.
+Project description TBD.
+
+---
+## Project 3
+
+Project description TBD.
+
+---
+## Project 4
+
+Project description TBD.
+
+---
+## Project 5
+
+Project description TBD.
