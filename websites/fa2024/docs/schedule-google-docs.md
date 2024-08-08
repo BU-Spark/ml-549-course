@@ -1,8 +1,9 @@
 ---
 layout: schedule
-title: Schedule
-nav_order: 2
+title: Schedule (Google Doc)
+nav_order: 99
 ---
+
 # Fall 2024 CS/DS-549 Lecture Schedule
 
 _The schedule is subject to change. Check back regularly!_
