@@ -16,22 +16,6 @@ The Spark! Machine Learning Practicum gives you hands-on experience developing s
 for real world challenges.
 {: .fs-6 .fs-300}
 
-<button class="btn js-toggle-dark-mode">dark color scheme</button>
-
-<script>
-const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-
-jtd.addEvent(toggleDarkMode, 'click', function(){
-  if (jtd.getTheme() === 'dark') {
-    jtd.setTheme('light');
-    toggleDarkMode.textContent = 'dark color scheme';
-  } else {
-    jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'light color scheme';
-  }
-});
-</script>
-
 ---
 
 ## Logistics 
