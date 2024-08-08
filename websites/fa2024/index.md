@@ -10,11 +10,21 @@ permalink: /
 
 
 # CS/DS-549 Spark! Machine Learning Practicum Syllabus
-{: .fs-9}
+{: .no_toc .fs-9}
 
 The Spark! Machine Learning Practicum gives you hands-on experience developing solutions
 for real world challenges.
 {: .fs-6 .fs-300}
+
+---
+<details close markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 ---
 
