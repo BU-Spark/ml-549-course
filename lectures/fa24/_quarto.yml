@@ -10,17 +10,16 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      - section: "*nux Shell and Shared Computing Cluster"
-        contents:
-          - command_shells.qmd
-          - scc.qmd
-      - section: "Git"
-        contents:
-          - lecture02.qmd
-      - section: "VS Code"
-        contents:
-          - lecture03.qmd
-      - about.qmd
+      - 01_command_shells.qmd
+      - 02_scc.qmd
+      - 03_git_and_github.qmd
+      - 04_vscode.qmd
+      - 05_tabular_data.qmd
+      - 06_pytorch.qmd
+      - 07_tensorflow_keras.qmd
+      - 08_huggingface.qmd
+      - 09_huggingface_spaces.qmd
+      - 10_llms.qmd
 
 format:
   html:

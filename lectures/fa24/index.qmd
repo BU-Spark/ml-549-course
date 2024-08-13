@@ -39,6 +39,13 @@ Basic shell commands
 3. github actions workflows
 4. CI/CD
 
+### VS Code
+
+1. Python extensions and support
+2. Jupyter extensions and support (debugging)
+2. Git/Github extensions and support
+
+
 ### Tabular data
 
 1. pandas
