@@ -23,7 +23,7 @@ nav_order: 2
     </tr>
     <tr>
         <td>Thu Sep 5</td>
-        <td>Lecture description.</td>
+        <td>Project Pitches.</td>
         <td>Materials link <a href="URL">here</a></td>
         <td><b>Assigned:</b> PS #<br><b>Due:</b> PS # </td>
     </tr>
