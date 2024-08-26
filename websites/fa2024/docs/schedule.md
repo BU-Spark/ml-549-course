@@ -214,7 +214,7 @@ nav_order: 2
     </tr>
     <tr>
         <td>Thu Dec 5</td>
-        <td>Lecture description.</td>
+        <td>Project Presentations.</td>
         <td>Materials link <a href="URL">here</a></td>
         <td><b>Assigned:</b> PS #<br><b>Due:</b> PS # </td>
     </tr>
@@ -228,7 +228,7 @@ nav_order: 2
         <td><b>Assigned:</b> PS #<br><b>Due:</b> PS # </td>
     </tr>
     <tr>
-        <td>TBD</td>
+        <td>Wed Dec 11</td>
         <td><b>Spark! Demo Day</b></td>
         <td colspan="2"> Materials link <a href="URL">here</a></td>
     </tr>
