@@ -31,47 +31,109 @@ for real world challenges.
 ## Logistics 
 
 **Time/Location:** Tue/Thu 2:00pm–3:15pm, Spring 2024<br>
-**Seminars/Meetings:** Wed 6:30 – 8:30pm<br>
-**Location:** CDS 164
+**Location:** CDS 264
 
 **Course Number:** CS/DS 549<br>
 **Course Credits:** 4
 
 **Instructor:**
 - Thomas Gardos ( tgardos@bu.edu) 
-- Office hours:  Monday, 3-4:30
-- Location: Zoom Link (you’ll be in the zoom waiting room until admitted)
+- Office hours:  Thursdays, 3:30-4:30 CDS 1623 and by appointment
 
 Project Managers and TE:
 - PM: TBA 
 - PM: TBA 
 - TE: TBA
 
-**Piazza:** _TBD_   (access code to be shared via email)<br>
+**Piazza:** [https://piazza.com/bu/fall2024/dscs549](https://piazza.com/bu/fall2024/dscs549)   (access code to be shared via email)<br>
 _Please use Piazza, not email, for all questions, including grading or missing class, etc. (use the private message to instructors for such requests)_
 
-**GradeScope:** _TBD_ (access code to be shared via email)<br>
+**GradeScope:** [https://www.gradescope.com/courses/845171](https://www.gradescope.com/courses/845171) (access code to be shared via email)<br>
 _If you don’t have access, contact the instructors via Piazza or email._
 
 ## Course Description
 
-Traditional machine learning (ML) courses underemphasize—or in some cases—eschew machine learning deployment practices and software engineering principles, to ensure beginners focus their attention on developing a solid understanding of ML. While justifiable, this practice perpetuates an ever-widening gap between industry expectations and student skills.
+Many machine learning (ML) courses underemphasize machine learning deployment practices
+and software engineering principles to ensure students focus their attention on developing a solid understanding of ML.
+While justifiable, this practice perpetuates an ever-widening gap between industry expectations and student skills.
 
-The X-Lab Machine Learning Practicum affords students opportunities to work on real-world, semester-long projects while highlighting architectural, infrastructural, and foundational considerations involved in building and deploying a machine learning pipeline. Ultimately, we hope to bridge the aforementioned gap between computer science and ML engineering, through project-based learning.
+The X-Lab Machine Learning Practicum affords students opportunities to work on real-world, semester-long projects while
+highlighting architectural, infrastructural, and foundational considerations involved in building and deploying machine
+learning Solutions. Ultimately, we hope to bridge the aforementioned gap between ML theory and ML engineering
+through project-based learning.
 
-We will divide our discussion into 4 parts:
-1. Teamwork and project management
-2. Problem definition, data preprocessing, and exploratory research
-3. Designing and developing ML pipelines
-4. Delivery and maintenance
+This course is organized around a six phase _Machine Learning Project Lifecycle (PLC)._
 
-We begin by exploring the various phases of software development methodologies. In this part of the course, we will study software development models and learn to use scrum, a flexible, iteration-driven approach to project management. We will also learn the delicate art of managing client expectations—a task that often involves understanding how software engineers and clients view time estimates differently.
+**Phase 1: Project Definition** (~2 weeks)<br>
+**Phase 2: Research and Problem Understanding** (~1 week)<br>
+**Phase 3: Data Preparation and EDA** (~2 weeks)<br>
+**Phase 4: Implement Proof-of-Concept AI/ML Model** (~2 weeks)<br>
+**Phase 5: Model Deployment** (~3 weeks)<br>
+**Phase 6: Evaluation and Delivery** (~1 week)
 
-In the second part of the course, we will develop an understanding of our project's needs and constraints and explore possible ML-based solutions. Importantly, we will also investigate and determine the need for machine learning, since not every problem requires (or even benefits from) ML. Having definitively established a need for machine learning, we will learn ways to preprocess and clean data, to understand it better. Here, we will look at techniques to augment sparse data, unearth hidden correlations, and contend with vast datasets.
+We briefly describe each phase here and will go into more depth in the class.
 
-In the third part of the course, we will focus on the design, architecture, and development of ML pipelines. We will use popular open source tools to build and train machine learning models. We will also focus on applying machine learning techniques to specific domains (e.g. computer vision, natural language processing, etc.).
+### Preliminaries
 
-Finally, we will wrap up our discussion by devising a delivery and maintenance plan. Here we will study continuous delivery and deployment, two distinct but compatible approaches to releasing reliable software in short cycles.
+In the first couple of weeks while project assignment is completing, we will focus on 
+preliminary practical skills such as agile software methodologies and familiarizing ourselves
+with the practical tools you will likely rely on throughout your project such as 
+version control with git, utilizing BU's Shared Computing Cluster for model training
+and getting more familiar with ML toolkits like Pandas, Scikit-Learn, PyTorch
+and HuggingFace.
+
+### Phase 1: Project Definition
+
+After projects are assigned and you form into teams, you will meet your client(s) and
+then clarify and refine the _Project Definition_. The project goals and deliverables
+will likely evolve as you become more familiar with the problem and feasibility
+of various solutions. We'll talk about the importance of working with your
+clients to collaborate on these updates and jointly manage expectations. This
+phase will take about 2 weeks.
+
+### Phase 2: Research and Problem Understanding
+
+With a clearer understanding of the project and client expectations, the next
+phase is to research the literature, open source projects and tools that may
+be applicable. The research is to help you understand the problem better as well
+understand what machine learning approaches have been applied to similar problems.
+You and your team may already start developing simple ML models to understand
+their strengths and weaknesses.
+
+### Phase 3: Data Preparation and Exploratory Data Analysis (EDA)
+
+Being a machine learning project, the quality of the data will be paramount.
+Improving your dataset can sometimes bring better gains then improving your
+ML model. In this 2-week phase you will explore and characterize your data. 
+This is a good time to check if there is missing data, incorrect labels or other
+issues. You may also determine that you need to augment your data with other
+publicly available datasets. This is a good time to develop your data ingestion
+pipeline.
+
+### Phase 4: Implement Proof-of-Concept AI/ML Model
+
+If your team hasn't already, this is the phase where you will start developing
+one or more proof-of-concepts model. The idea is to start gaining confidence that
+the model architecture and direction your team has chosen will solve the problem
+posed in the project. It can be helpful here to "fail fast" and quickly try a 
+few different models. We'll allocate about 2 weeks to this phase.
+
+### Phase 5: Model Deployment
+
+By this phase you will have clarified project and client expectations, completed
+literature and project research, developed an understanding of your dataset and
+prepared the data ingestion pipeline. From the PoCs you should have reasonable
+confidence of the model you want to fully develop and so this is the phase
+where fully define the model, train the model and tune hyperparameters. We
+allocate about 3 weeks to this phase.
+
+### Phase 6: Evaluation and Delivery
+
+In this last and final phase, you will complete model training and focus on 
+model evaluation and delivery including cleaning up and documenting
+your GitHub repository. You will also prepare your final presentation,
+the report to your clients and the demo for Spark Demo Day.
+
 
 ## Prerequisites
 
