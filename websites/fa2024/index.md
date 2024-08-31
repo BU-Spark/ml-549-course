@@ -137,7 +137,16 @@ the report to your clients and the demo for Spark Demo Day.
 
 ## Prerequisites
 
-To ensure that students get the most out of this class, we require students to have taken one of **CS 505 (Intro to Natural Language Processing)**, **CS 542 (Intro to Machine Learning)**, **CS 585 (Image and Video Computing)** or have equivalent experience. You must have a strong programming background especially with proficiency in Python. Familiarity with web and/or mobile application development is helpful, though not required. Please consult with course staff during office hours if you have questions about the prerequisites. Assignment 1 (the diagnostic test) will help you assess your readiness to take this class.
+To ensure that students get the most out of this class, we require students to have taken one of 
+
+- **DS 542 (Deep Learning for Data Science)**
+- **CS 505 (Intro to Natural Language Processing)**, 
+- **CS 542 (Principles of Machine Learning)**, 
+- **CS 585 (Image and Video Computing)** 
+- **CS 640 (Artificial Intelligence)**
+- **ENG EC 523 (Deep Learning)**
+
+or have equivalent experience. You must have a strong programming background especially with proficiency in Python. Familiarity with web and/or mobile application development is helpful, though not required. Please consult with course staff during office hours if you have questions about the prerequisites. 
 
 ## Hub Learning Outcomes
 
