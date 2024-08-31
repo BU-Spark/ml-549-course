@@ -331,7 +331,7 @@ Using code you have borrowed from the internet without permission and/or attribu
 
 Unless explicitly stated, collaboration on assignments and projects among teammates is both allowed and encouraged.
 
-### Use of Generative AI for course work
+### Use of Generative AI
 
 Generative AI tools are permitted for coursework, with a strong recommendation to maintain transparency by appropriately citing their usage.
 
