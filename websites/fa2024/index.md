@@ -269,11 +269,12 @@ individual contributions.
 			<td> Project Impact and Success </td>
 			<td> Ultimately the goal of the project is to deliver towards the
 			 client's expectations. 
-			 <ul>
+			  <ul>
 				<li> Did the project accomplish a sufficient number of (possibly
 				     revised) objectives?</li>
-				<li> Was the client relationship managed well? </td>
-			 </ul>
+				<li> Was the client relationship managed well? </li>
+			  </ul>
+			</td>
 		</tr>
 		<tr>
 			<td> 20% </td>
