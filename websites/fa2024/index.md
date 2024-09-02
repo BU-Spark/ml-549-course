@@ -242,18 +242,20 @@ Your final grade will be a weighted sum of grades received in the following cate
 
 | % of Grade | Category | Notes |
 | ---------- | -------- | ----- |
-| 15% | Assignments | Grading rubrics are available on individual assignment pages. You must pass the diagnostic assessment to receive a passing grade in the class. |
-| 15% | Attendance and Participation | Students are graded on their in person attendance, class participation and individual contributions towards the project. |
-| 50% | Project | Students are graded on their individual contributions and overall quality of the project (see below) |
-| 5% | Peer evaluations | Each student will receive midterm and final peer evaluations from members of their project |
-| 5% | Midterm presentation | Student teams will present their projects to the rest of the class. All students on a team will receive the same grade. |
-| 10% | Final presentations | Student teams will present their projects to the rest of the class. All students on a team will receive the same grade, barring special circumstances. |
+| 15% | Assignments | Grading rubrics are available on individual assignment pages. |
+| 10% | Attendance and Participation | Students are graded on their in attendance, participation and engagement during lectures. |
+| 15% | Presentations | Student teams will give interim and final presentation on their projects to the rest of the class. All students on a team will receive the same grade. |
+| 60% | Project | Students are graded on their individual contributions and overall quality of the project (see below) |
 
-Given that this is a practicum, the project is central to this course and is worth 50% of your final grade. We will be partnering with BU Spark! to work on a semester-long, machine learning project. Projects are sourced from external partners and are complex enough to provide students with real-world ML experience.
+Given that this is a practicum, the project is central to this course and is
+worth 60% of your final grade. We will be partnering with BU Spark! to work on a
+semester-long, machine learning project. Projects are sourced from external
+partners and are complex enough to provide students with real-world ML experience.
 
 ### Project Grading
 
-Projects will be graded on:
+Projects will be graded based on a combination of overall project outcome and
+individual contributions.
 
 <table>
 	<tbody>
@@ -263,48 +265,45 @@ Projects will be graded on:
 			<th> Description/Notes </th>
 		</tr>
 		<tr>
-			<td> 30% </td>
-			<td> Objectives Achieved </td>
-			<td> Ultimately the goal of the project is to deliver towards the client's expectations. Did the project accomplish a sufficient number of (possibly revised) objectives?</td>
+			<td> 40% </td>
+			<td> Project Impact and Success </td>
+			<td> Ultimately the goal of the project is to deliver towards the
+			 client's expectations. 
+			 <ul>
+				<li> Did the project accomplish a sufficient number of (possibly
+				     revised) objectives?</li>
+				<li> Was the client relationship managed well? </td>
+			 </ul>
 		</tr>
 		<tr>
-			<td> 10% </td>
-			<td> Client Relationship & Management </td>
+			<td> 20% </td>
+			<td> Repo Software and Documentation Quality, Reproducibility </td>
 			<td> 
 				<ul> 
-					<li> Did the team develop a positive, constructive rapport with the clients?</li> 
-					<li> Did the team clarify client expectations and problem definition sufficiently?</li> 
-					<li> Were project deliverables defined and updated with client input and approval?</li>
+					<li> Is the Github repository well organized and easy to navigate?</li> 
+					<li> Is the repo well documented especially with replication steps?</li> 
+					<li> Can one start from a new environment and easily setup and run?</li>
 				</ul> 
 			</td>
 		</tr>
 		<tr>
-			<td> 25% </td>
-			<td> Algorithmic Soundness </td>
-			<td> 
+			<td> 30% </td>
+			<td> Individual Contribution </td>
+			<td> Is there clear evidence of
 				<ul>
-					<li> Is the training process well documented and reproducible?</li>
-					<li> Is the evaluation process rigorous and reproducible?</li>
-					<li> Is the dataset available and any preprocessing or augmentation well documented? </li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td> 25% </td>
-			<td> Code quality,  organization and reproducibility </td>
-			<td>
-				<ul>
-					<li>  Is the source code for the application well-structured with meaningful folder structure and intuitive filenames?</li>
-					<li> Is the environment documented and easily recreated?</li>
-					<li>n Is there a top-level README that orients the user to the repository, installation and operating instructions and summarizes results?</li>
-					<li> Is the project replicable? Has a clean installation been attempted?</li>
+					<li> Attendance and active participation in class lab time, client and team meetings?</li>
+					<li> Documented activities in sprint plan history?</li>
+					<li> Git commit history and co-authored git commits? </li>
+					<li> Record of individual's contributions in document and presentation revision history?</li>
 				</ul>
 			</td>
 		</tr>
 		<tr>
 			<td> 10% </td>
-			<td> Team Process </td>
-			<td> Did the team meet periodically and operate in sprints? Was project progress incremental? </td>
+			<td> Individual contribution to collaboration and teamwork</td>
+			<td> Is there indication, for example from peer reviews, of positive
+			     collaborations and constructive teamwork?
+			</td>
 		</tr>
 	</tbody>
 </table>
@@ -331,7 +330,7 @@ Using code you have borrowed from the internet without permission and/or attribu
 
 Unless explicitly stated, collaboration on assignments and projects among teammates is both allowed and encouraged.
 
-### Use of Generative AI for course work
+### Use of Generative AI
 
 Generative AI tools are permitted for coursework, with a strong recommendation to maintain transparency by appropriately citing their usage.
 
