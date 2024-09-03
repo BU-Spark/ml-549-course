@@ -63,6 +63,9 @@ jobs:
       - run: pip install -r quarto-lectures-source/requirements.txt
       - run: pip list
 
+      - name: List Quarto Source Files
+        run: pwd; ls -la ./quarto-lectures-source
+
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with:
