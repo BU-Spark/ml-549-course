@@ -1,0 +1,17 @@
+project:
+  output-dir: _revealjs
+  render:
+    - index.qmd
+    - 01_command_shells.qmd    
+
+format:
+  revealjs:
+    footer: "DS549 -- Gardos"
+    scrollable: true
+    slide-number: c/t
+    show-slide-number: all
+    chalkboard: true
+    smaller: true
+    html-math-method: mathjax
+    echo: true
+    code-fold: false

@@ -1,0 +1,5 @@
+
+/.quarto/
+
+# virtual environments
+.quarto_env/

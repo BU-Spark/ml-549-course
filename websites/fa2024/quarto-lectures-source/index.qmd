@@ -1,0 +1,69 @@
+---
+title: "CS/DS549 ML Practicum -- Fall 2024"
+---
+
+# Introduction
+
+Each lecture is ~30 minutes followed by either in class exercise in the early
+part of the course or lab time.
+
+## Topics
+
+### Command Shells
+
+1. MacOS command shell
+2. Windows command shell options
+    1. Windows Command
+    2. Git shell
+    3. WSL
+
+Basic shell commands
+
+### Shared Computing Cluster
+
+1. SCC Overview
+2. SCC group, changing default group
+3. shell commands, user/group/world permissions
+2. Login nodes vs compute nodes
+3. Differences in compute nodes and options, CDS buy-in
+3. Interactive sessions
+    1. desktop
+    2. vs code
+4. Batch sessions
+
+### Git and Github
+
+1. git basics
+2. github and git servers
+3. exercise: forking, cloning, topic branch, push, create PR
+3. github actions workflows
+4. CI/CD
+
+### VS Code
+
+1. Python extensions and support
+2. Jupyter extensions and support (debugging)
+2. Git/Github extensions and support
+
+
+### Tabular data
+
+1. pandas
+2. scikit-learn
+
+### Pytorch
+
+### Tensorflow/Keras
+
+### Huggingface Transformers and Models
+
+### Huggingface Spaces
+
+### LLMs
+
+1. Chainlit/literal.ai
+2. langchain
+3. llamaindex
+4. HF Transformers
+
+

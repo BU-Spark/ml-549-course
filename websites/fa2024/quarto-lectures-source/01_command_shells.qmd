@@ -1,0 +1,406 @@
+---
+title: "Command Shells"
+---
+
+# Introduction
+
+Although there are a lot of great GUI-based machine learning applications, there
+are many cases when it is more productive to use command line interfaces, for
+example with `git` or `python` and basic file and directory manipulation.
+
+We'll get you familiar with command shells for 
+Windows and MacOS here. In the next section we'll cover the Shared Computing Cluster
+at BU and its Linux operating system.
+
+## History and Types of Command Shells
+
+By far, most command shells used in machine learning are descendents from the
+Bourne shell, `sh`, which was developed in the 1970s at AT&T's Bell Labs
+for the Unix operating system. The Bourne Again shell[^1], `bash`, was developed
+in the 1980s at the University of California, Berkeley.
+
+Most machine learning infrastructures are now built on Linux, which was a
+mostly compatible operating system built mostly from scratch by Linux
+founder Linus Torvalds in the 1990s.
+
+The `zsh` shell is a more recent descendent of the Bourne shell. It is the default
+shell on MacOS. MacOS itself is a descendent of Unix and so the command shell
+is tightly integrated with the operating system.
+
+### Windows Terminal
+
+::: {.callout-warning}
+It should be noted that Windows Terminal (todo: use correct name) is, for the
+most part, a completely different command shell from `bash` and `zsh` with
+different syntax and commands. As we describe below, we recommended to
+use one of the Linux variants of shells available on Windows.
+:::
+
+[^1]: The name `bash` is a pun on the name of the Bourne shell, `sh`.
+
+
+## Getting to a command shell
+
+The types and how you start command shells varies by operating system. Choose
+the tab for your operating system.
+
+::: {.panel-tabset}
+
+### MacOS
+
+In MacOS, start the `terminal` app. ![MacoS Terminal](assets/images/macos_terminal_icon.jpeg){width="30px"} 
+
+Starting with MacOS Catalina, the default shell is [`zsh`](https://zsh.org/). If
+you've upgraded from an earlier version of Catalina, you might still be using
+`bash` shell.  If you are still using `bash`, there should be reminder
+everytime you open Terminal instructing how you switch to `zsh`.
+
+The reason it is important to know which shell you are running is that the shell
+startup configuration files are particular to the shell. There are some other
+subtle differences in shell commands and syntax.
+
+You can see which shell you are running with the process status command `ps`. 
+One or more of the processes listed will include `bash` or `zsh`.
+
+
+### Windows
+
+There are several options for command shells on Windows, provided below
+in increasing order of preference.
+
+#### Windows Terminal
+
+As mentioned above, Windows Terminal is a different shell from `bash` and `zsh`
+and is generally not as well supported by many machine learning related
+command line tools.
+
+#### Windows GIT terminal
+
+(Say someting about GIT bash and what directories it has access to))
+#### Windows Subsystem for linux (WSL)
+
+(Recommend WSL2. Check how you get access to the Windows filesystem from WSL2.)
+:::
+
+## First Basic Commands
+
+At this point you should have a command shell open and seeing at least
+a minimal prompt like:
+
+```sh
+$
+```
+
+or
+
+```sh
+%
+```
+Your prompt may have some other decorations around the prompt character, 
+and we'll cover those later.
+
+### `pwd` -- print working directory
+
+```sh
+usage: pwd
+```
+
+It's very helpful to know where you are in the filesystem and `pwd` tells
+you that. When you first open a terminal, you are usually in your home directory.
+
+### `cd` -- change directory
+
+```sh
+usage: cd [directory]
+```
+
+You use `cd` to change directories. 
+
+If you want to change to your home directory you can type `cd` with no
+arguments.
+
+```sh
+cd
+```
+
+Besides type directory paths such as `/path/to/directory`, you can also
+use `..` to go up one directory and `.` to refer to the current directory.
+The other special directories are `~` for your home directory and `-` for the
+previous directory you were in.
+
+```sh
+cd ..
+cd .
+```
+
+### `ls` -- list directory contents
+
+Once you are in a directory You can use `ls` to list the contents of a directory.
+
+```sh
+usage: ls [-al1] [directory]
+```
+If you type `ls` with no arguments, it will list the contents of the current
+directory.
+
+By default file with filenames starting with a dot are not listed. If you want
+to list all the contents of the current directory, including the dot hidden
+files, you can use the `-a` option, `ls -a`.
+
+You can see more information about the files in your directory with the `-l`
+option, `ls -l`. It will show something like this from MacOS:
+
+```sh
+drwxr-xr-x  14 tomg  staff  448 Aug 15 15:43 courses
+drwxr-xr-x@ 16 tomg  staff  512 Aug 26  2023 coursework
+```
+| File Permissions | Number of Links | Owner | Group | Size | Date Modified | Filename |
+| ---------------- | --------------- | ----- | ----- | ---- | ------------- | -------- |
+| drwxr-xr-x  | 14 | tomg | staff | 448 | Aug 15 15:43 | courses |
+| drwxr-xr-x@ | 16 | tomg | staff | 512 | Aug 26 2023 | coursework |
+
+The file permissions are a string of 10 characters. The first character is
+the file type. The next 9 characters are the file permissions in triplets
+corresponding to the user, group, and other permissions.
+
+In each triplet, the first character is the read permission, the second character
+is the write permission, and the third character is the execute permission. If
+there is `-` in the triplet, it means the permission is not granted.
+
+If there is a `@` at the end of the line, it means the file has extended
+attributes.
+
+```
+             group permissions
+        file type    |    extended attributes
+                |   ---   |
+                drwxr-xr-x@
+                 ---   ---
+                  |     |
+                  |       other/world permissions
+                  user permissions
+```
+
+Understanding file permissions are important to understand. For command
+shells on personal computers, the permissions are not as important. However,
+on shared computing clusters, understanding file permissions is critical.
+We'll talk more about in the SCC section.
+
+Also the "Owner" and "Group" are important. The "Owner" is the user that
+created the file. The "Group" is the group that the user belongs to. Again, on
+personal computers, these are not as important. However, on shared computing
+clusters, these are critical.
+
+### `rm` -- remove files or directories
+
+```sh
+usage: rm [-fivr] file...
+```
+
+### `cp` -- copy files or directories
+
+```sh
+usage: cp [-R] source destination
+```
+
+### `mv` -- move or rename files or directories
+
+```sh
+usage: mv [-fiv] source destination
+```
+### `mkdir` -- make directories
+
+```sh
+usage: mkdir [-pv] directory...
+```
+
+### `cat` -- display file contents
+
+```sh
+usage: cat [-bEevnst] [file...]
+```
+
+### `more` -- display file contents one page at a time
+
+```sh
+usage: more [file...]
+```
+
+### `head` -- display the first 10 lines of a file
+
+```sh
+usage: head [-n] [file...]
+```
+
+### `tail` -- display the last 10 lines of a file
+
+```sh
+usage: tail [-f] [-n] [file...]
+```
+
+### `man` -- display the manual page for a command
+
+```sh
+usage: man [-k] command...
+```
+Note that for the most of the "builtin" commands shown above, there might ::: {.notes}
+be detailed command help, which is the case for MacOS `zsh`. SCC's Linux
+`bash` does have more detailed help on builtin commands.
+
+### Other commands
+
+There are many more commands and aspects of command shells that are helpful, 
+such as _pipes_, _background jobs_, redirection, and more.
+
+## Command Shell-Based Editors
+
+There are many great GUI-based Integrated Development Environments (IDEs)
+for machine learning. However, many command line tools are still useful.
+
+### `nano` -- simple text editor
+
+```sh
+usage: nano [file...]
+```
+`nano` is a simple text editor that is easy to use. It is a good editor to use
+for beginners. For the most part, you are shown what commands are available
+to you.
+
+### `vim` -- advanced text editor
+
+```sh
+usage: vim [file...]
+```
+
+`vim` is a more advanced text editor that is more powerful than `nano`. It is
+a good editor to use for more advanced users.  It might be worth taking the
+time to learn it.
+
+See for example the [documentation](https://vimhelp.org/) and a
+[Vim Cheat Sheet](https://vim.rtorr.com/).
+
+Perhaps the most basic getting started tutorial is to edit a new file to add
+a line of text to it, then save and exit.
+
+```sh
+vim myfile.txt
+```
+
+The edit will then occupy your entire terminal window.
+
+An important concept of `vim` is that you switch between a _navigate mode_
+and an _insert mode_.  When in _navigate mode_ any keys you press will be 
+interpretted as commands. You start in _navigate mode_. To switch to _insert
+mode_, you press `i`. To save and exit, you press `Esc` and then `:wq`.
+
+So type 'i' to switch to _insert mode_, type any text you want to add, for
+example, "Hello, world!", then press `Esc` to switch back to _navigate mode_.
+
+To save and exit, press `Esc` and then `:wq`.
+
+## Shell Configuration
+
+::: {.panel-tabset}
+
+### `zsh` configuration
+
+When you start a new shell, it will read certain files to set configuration.
+One useful one is `.zshrc` in your home directory.
+
+If you add the following lines to your `.zshrc` file, it will add three
+very helpful decorations to your shell prompt:
+
+1. The current working directory.
+2. The current git branch name.
+3. A checkmark if the last shell command was successful and a question mark if it was not.
+
+```sh
+# Find and set branch name var if in git repository.
+# From: https://medium.com/pareture/simplest-zsh-prompt-configs-for-git-branch-name-3d01602a6f33
+function git_branch_name()
+{
+  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+  if [[ $branch == "" ]];
+  then
+    :
+  else
+    echo '('$branch')'
+  fi
+}
+
+prompt='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%1~%f%b %F{red}$(git_branch_name)%f %# '
+```
+
+For example, on MacOS `zsh` my prompt looks like this:
+
+<code><span style="color: green;">√</span> ml-549-course <span style="color: red;">(lectures)</span> %</code>
+
+Which tells me that the last command was successful, I am in the `ml-549-course`
+directory, the current git branch is `lectures`.
+
+### `bash` configuration
+
+When you start a new shell, it will read certain files to set configuration.
+One useful one is `.bashrc` in your home directory.
+
+If you add the following lines to your `.bashrc` file, it will add two
+very helpful decorations to your shell prompt:
+
+1. The current working directory.
+2. The current git branch name.
+
+```sh
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+export PS1="\[\e[32m\]\w \[\e[91m\]\$(parse_git_branch)\[\e[00m\]$ "
+```
+So in a `bash` command shell, my prompt my look like this:
+
+<code><span style="color: green;">/users/tomg/ml-549-course </span><span style="color: red;">(main)</span> $</code>
+
+Which tells me I'm in the directory `/users/tomg/ml-549-course` and I'm 
+on git branch `main`.
+
+:::
+
+## Exercise: Command Shell Scavenger Hunt
+
+Create a shell script called `treasure_hunt.sh` that performs a series of tasks,
+demonstrating your understanding of basic command line operations. The script
+should:
+
+1. Create a directory called `ml_treasure_hunt`
+2. Inside that directory, create a text file named `clue_1.txt` with the content "The treasure is hidden in plain sight"
+3. Create a subdirectory called `secret_chamber`
+4. In the `secret_chamber`, create a file called `clue_2.txt` with the content "Look for a hidden file"
+5. Create a hidden file in the `ml_treasure_hunt` directory called `.treasure_map.txt` with the content "Congratulations! You've found the treasure!"
+
+Use either `nano` or `vim` from a command shell to create the script.
+
+::: {.callout-tip}
+Shell scripts are just text files. By convention, they have a `.sh` extension and start with a "shebang" line.
+
+```sh
+#!/usr/bin/env bash
+
+# Your code here
+```
+
+There are multiple ways to execute the shell script. Perhaps the easiest is
+```sh
+source treasure_hunt.sh
+```
+
+:::
+
+
+## References
+
+- [Bash Reference Manual](https://www.gnu.org/software/bash/manual/html_node/index.html)
+- [Bash (Wikipedia)](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+- [Bash Cheat Sheet](https://devhints.io/bash)
+- [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/)
+- [Z shell documentation](https://zsh.sourceforge.io/)
+- [Zsh Cheat Sheet](https://devhints.io/zsh)
+- [Zsh Guide for Beginners](https://zsh.sourceforge.io/Guide/zshguide.html)
