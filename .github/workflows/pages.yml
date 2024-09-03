@@ -49,8 +49,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        # run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-        run: bundle exec jekyll build --baseurl "/ml-549-course/fa2024"
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        # run: bundle exec jekyll build --baseurl "/ml-549-course/fa2024"
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
