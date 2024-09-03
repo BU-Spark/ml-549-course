@@ -67,7 +67,9 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           path: ./quarto-lectures-source
+          to: html
         env:
+          QUARTO_PROFILE: web
           QUARTO_DENO_V8_OPTIONS: --stack-size=8192
 
       - name: Build with Jekyll
