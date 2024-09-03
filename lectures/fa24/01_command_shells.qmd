@@ -1,0 +1,81 @@
+---
+title: "Command Shells"
+---
+
+# Introduction
+
+Although there are a lot of great GUI-based machine learning applications, there
+are many cases when it is more productive to use command line interfaces, for
+example with `git` or `python`. We'll get you familiar with command shells for 
+Windows and MacOS here. In the next section we'll cover the Shared Computing Cluster
+at BU and its Linux operating system.
+
+Topics to cover:
+
+1. why important (the basic control language for machine learning)
+2. MacOS (zsh) versus Windows (terminal and linux subsystem) versus linux distributions (e.g. SCC)
+
+## Getting to a command shell
+
+The types and how you start command shells varies by operating system.
+
+::: {.panel-tabset}
+
+### MacOS
+
+In MacOS, start the `terminal` app. ![MacoS Terminal](assets/images/macos_terminal_icon.jpeg){width="30px"} 
+
+Starting with MacOS Catalina, the default shell is [`zsh`](https://zsh.org/). If
+you've upgraded from an earlier version of Catalina, you might still be using `bash`
+shell.  If you are still using `bash`, there should be reminder everytime you
+open Terminal instructing how you switch to `zsh`.
+
+The reason it is important to know which cell you are running is that the shell
+startup configuration files are particular to the shell. There are some other
+subtle differences in shell commands and syntax.
+
+You can see which shell you are running with the process status command `ps`. 
+One or more of the processes listed will include `bash` or `zsh`.
+
+### SCC
+
+The easiest way to get to a terminal session on the Shared Computing Cluster (SCC)
+is to navigate to [SCC On Demand](https://scc-ondemand.bu.edu).
+
+You can also `ssh` to <username>@scc1.bu.edu or <username>@scc2.bu.edu or
+ <username>@scc3.bu.edu, the login nodes.
+
+ The first time you `ssh`, you might get the message a like this with `scc1`:
+
+ ```
+ The authenticity of host 'scc2.bu.edu (192.12.187.131)' can't be established.
+ED25519 key fingerprint is SHA256:OmvL4FQ48QTpcXDpYE63rse1tM6pfKfSUgaVW1+mlIw.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+```
+
+Just type yes and hit `return`.
+
+
+### Windows
+
+sdfsd
+
+#### Windows terminal
+
+#### Windows GIT terminal
+
+#### Windows Subsystem for linux (WSL)
+
+:::
+
+Commands to cover:
+
+Directory commands:
+```sh
+pwd; cd; ls
+```
+
+File handling commands:
+```sh
+```
