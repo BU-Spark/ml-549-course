@@ -35,8 +35,9 @@ jobs:
       run:
         working-directory: ./websites/fa2024
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -44,15 +45,38 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
           working-directory: '${{ github.workspace }}/websites/fa2024'
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
+      # Downloads and isntalls the OS specific version of Quarto
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install Python and Dependencies
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - run: pip install jupyter
+      - run: pip install -r requirements.txt
+      - run: pip list
+
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          path: ./quarto-lectures-source
+        env:
+          QUARTO_DENO_V8_OPTIONS: --stack-size=8192
+
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         # run: bundle exec jekyll build --baseurl "/ml-549-course/fa2024"
         env:
           JEKYLL_ENV: production
+          
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
