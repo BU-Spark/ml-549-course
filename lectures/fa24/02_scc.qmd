@@ -1,0 +1,21 @@
+---
+title: "Shared Computing Cluster"
+---
+
+# Topics to Cover
+
+Blah blah.
+
+## Next section
+
+More blah blah.
+
+```{python}
+x = 5
+x
+```
+
+```{markdown}
+Text $x = 5$.
+```
+

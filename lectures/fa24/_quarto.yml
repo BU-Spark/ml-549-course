@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: "CS/DS 549 Lectures"
+  back-to-top-navigation: true
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - href: index.qmd
+        text: Home
+      - 01_command_shells.qmd
+      - 02_scc.qmd
+      - 03_git_and_github.qmd
+      - 04_vscode.qmd
+      - 05_tabular_data.qmd
+      - 06_pytorch.qmd
+      - 07_tensorflow_keras.qmd
+      - 08_huggingface.qmd
+      - 09_huggingface_spaces.qmd
+      - 10_llms.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
